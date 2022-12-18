@@ -23,7 +23,7 @@ jobs:
 
       - name: Create & Start Docker Containers
         run: |
-          mkdir api
+          mkdir src
           docker compose up -d
 
       - name: OS Version

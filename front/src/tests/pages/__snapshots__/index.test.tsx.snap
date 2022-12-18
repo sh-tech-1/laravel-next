@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> should render correctly 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.c1 {
+  margin-right: 2rem;
+  width: min(100%,80rem);
+}
+
+.c2 {
+  max-width: 80rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+<main
+  class="c0"
+>
+  <img
+    alt="Welcome"
+    class="c1"
+    src="/images/logo.svg"
+  />
+  <h2
+    class="c2"
+  >
+    React SSR boilerplate made on top of NextJS with the power of Typescript, Styled Components, Jest, Testing Library and infinite possibilities.
+  </h2>
+  <a
+    class="c3"
+    href="https://github.com/skeletonking1/aphrodite"
+  >
+    Get started
+  </a>
+</main>
+`;

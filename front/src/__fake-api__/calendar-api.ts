@@ -1,7 +1,9 @@
 import { addDays, endOfDay, setHours, setMinutes, startOfDay, subDays } from 'date-fns';
-import type { CalendarEvent } from '../types/calendar';
+
 import { createResourceId } from '../utils/create-resource-id';
 import { deepCopy } from '../utils/deep-copy';
+
+import type { CalendarEvent } from '../types/calendar';
 
 const now = new Date();
 

@@ -1,17 +1,19 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import NextLink from 'next/link';
-import { Box, ButtonBase, ListItem, SvgIcon, Typography } from '@mui/material';
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
+import { Box, ButtonBase, ListItem, SvgIcon, Typography } from '@mui/material';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+
 import { ExclamationCircle as ExclamationCircleIcon } from '../../../icons/exclamation-circle';
-import { Star as StarIcon } from '../../../icons/star';
 import { Inbox as InboxIcon } from '../../../icons/inbox';
 import { Mail as MailIcon } from '../../../icons/mail';
 import { MailOpen as MailOpenIcon } from '../../../icons/mail-open';
-import { Trash as TrashIcon } from '../../../icons/trash';
-import { TagOutlined as TagOutlinedIcon } from '../../../icons/tag-outlined';
 import { PaperAirplane as PaperAirplaneIcon } from '../../../icons/paper-airplane';
+import { Star as StarIcon } from '../../../icons/star';
+import { TagOutlined as TagOutlinedIcon } from '../../../icons/tag-outlined';
+import { Trash as TrashIcon } from '../../../icons/trash';
+
 import type { Label } from '../../../types/mail';
+import type { FC } from 'react';
 
 interface MailLabelProps {
   active?: boolean;
@@ -32,7 +34,7 @@ const systemLabelIcons: Record<string, typeof SvgIcon> = {
 
 const getIcon = (label: Label): typeof SvgIcon => {
   if (label.type === 'system') {
-    return systemLabelIcons[label.id as string];
+    return systemLabelIcons[label.id ];
   }
 
   return TagOutlinedIcon;

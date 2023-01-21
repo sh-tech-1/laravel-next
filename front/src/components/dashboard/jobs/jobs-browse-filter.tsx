@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import { useMemo } from 'react';
-import type { CardProps } from '@mui/material';
 import { Box, Card, Checkbox, Chip, Divider, FormControlLabel, Input } from '@mui/material';
+import { useMemo } from 'react';
+
 import { Search as SearchIcon } from '../../../icons/search';
 import { MultiSelect } from '../../multi-select';
+
+import type { CardProps } from '@mui/material';
+import type { FC } from 'react';
 
 const typeOptions = [
   {

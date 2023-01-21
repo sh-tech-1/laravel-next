@@ -1,4 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit';
+
 import { reducer as calendarReducer } from '../slices/calendar';
 import { reducer as chatReducer } from '../slices/chat';
 import { reducer as kanbanReducer } from '../slices/kanban';

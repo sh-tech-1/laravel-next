@@ -1,7 +1,9 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
 import { Avatar, Box, Card, Link, Typography } from '@mui/material';
+import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+
 import { Download as DownloadIcon } from '../../../icons/download';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

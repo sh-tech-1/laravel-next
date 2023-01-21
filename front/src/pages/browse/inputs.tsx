@@ -1,16 +1,18 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../components/browse-layout';
 import { MainLayout } from '../../components/main-layout';
 import { WidgetPreviewer } from '../../components/widget-previewer';
 import { InputCheckbox } from '../../components/widgets/inputs/input-checkbox';
+import { InputMixed } from '../../components/widgets/inputs/input-mixed';
 import { InputRadio } from '../../components/widgets/inputs/input-radio';
 import { InputSwitch } from '../../components/widgets/inputs/input-switch';
 import { InputTextField } from '../../components/widgets/inputs/input-text-field';
-import { InputMixed } from '../../components/widgets/inputs/input-mixed';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const BrowseInputs: NextPage = () => {
   useEffect(() => {

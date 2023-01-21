@@ -1,8 +1,10 @@
-import type { FC } from 'react';
 import { Avatar, Box, Card, Grid, LinearProgress, Typography } from '@mui/material';
+
 import { CurrencyDollar as CurrencyDollarIcon } from '../../../icons/currency-dollar';
 import { FolderOpen as FolderOpenIcon } from '../../../icons/folder-open';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 export const QuickStats2: FC = () => (
   <Box

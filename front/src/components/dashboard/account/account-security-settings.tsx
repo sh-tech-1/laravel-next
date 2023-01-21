@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
 import {
   Box,
   Button,
@@ -14,8 +12,12 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import { useState } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 export const AccountSecuritySettings: FC = () => {
   const [isEditing, setIsEditing] = useState<boolean>(false);

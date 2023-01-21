@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, FormControlLabel, Paper, Radio, RadioGroup, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 const typeOptions = [
   {

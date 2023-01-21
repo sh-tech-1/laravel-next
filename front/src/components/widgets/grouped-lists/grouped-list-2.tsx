@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Avatar,
   Box,
@@ -14,7 +12,11 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+
+import type { FC } from 'react';
 
 const referrals = [
   {

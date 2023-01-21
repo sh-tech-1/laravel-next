@@ -1,28 +1,30 @@
-import type { FC } from 'react';
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import type { AppProps } from 'next/app';
+import { CacheProvider } from '@emotion/react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import Head from 'next/head';
 import Router from 'next/router';
+import nProgress from 'nprogress';
+import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Provider as ReduxProvider } from 'react-redux';
-import nProgress from 'nprogress';
-import { CacheProvider } from '@emotion/react';
-import type { EmotionCache } from '@emotion/cache';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+
 import { RTL } from '../components/rtl';
 import { SettingsButton } from '../components/settings-button';
 import { SplashScreen } from '../components/splash-screen';
-import { SettingsConsumer, SettingsProvider } from '../contexts/settings-context';
-import { AuthConsumer, AuthProvider } from '../contexts/jwt-context';
 import { gtmConfig } from '../config';
+import { AuthConsumer, AuthProvider } from '../contexts/jwt-context';
+import { SettingsConsumer, SettingsProvider } from '../contexts/settings-context';
 import { gtm } from '../lib/gtm';
 import { store } from '../store';
 import { createTheme } from '../theme';
 import { createEmotionCache } from '../utils/create-emotion-cache';
+
+import type { EmotionCache } from '@emotion/cache';
+import type { NextPage } from 'next';
+import type { AppProps } from 'next/app';
+import type { FC } from 'react';
 import '../i18n';
 
 type EnhancedAppProps = AppProps & {

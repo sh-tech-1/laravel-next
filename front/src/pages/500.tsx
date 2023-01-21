@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import NextLink from 'next/link';
-import Head from 'next/head';
 import { Box, Button, Container, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useEffect } from 'react';
+
 import { gtm } from '../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const ServerError: NextPage = () => {
   const theme = useTheme();

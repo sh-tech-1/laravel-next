@@ -1,9 +1,10 @@
-import type { FC } from 'react';
-import { Avatar, Box, Card, Grid, Typography } from '@mui/material';
-import { alpha } from '@mui/material/styles';
 import ErrorIcon from '@mui/icons-material/Error';
 import TimelapseIcon from '@mui/icons-material/Timelapse';
 import WarningIcon from '@mui/icons-material/Warning';
+import { Avatar, Box, Card, Grid, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
+
+import type { FC } from 'react';
 
 export const LogisticsOverview: FC = (props) => (
   <Grid

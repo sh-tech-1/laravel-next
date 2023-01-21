@@ -1,12 +1,10 @@
-import type { FC } from 'react';
-import { ReactNode, useEffect, useMemo, useRef, useState } from 'react';
+import { Box, Button, Chip, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import type { TFunction } from 'react-i18next';
+import { ReactNode, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Theme } from '@mui/material';
-import { Box, Button, Chip, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
+
 import { Calendar as CalendarIcon } from '../../icons/calendar';
 import { Cash as CashIcon } from '../../icons/cash';
 import { ChartBar as ChartBarIcon } from '../../icons/chart-bar';
@@ -31,8 +29,13 @@ import { Users as UsersIcon } from '../../icons/users';
 import { XCircle as XCircleIcon } from '../../icons/x-circle';
 import { Logo } from '../logo';
 import { Scrollbar } from '../scrollbar';
+
 import { DashboardSidebarSection } from './dashboard-sidebar-section';
 import { OrganizationPopover } from './organization-popover';
+
+import type { Theme } from '@mui/material';
+import type { FC } from 'react';
+import type { TFunction } from 'react-i18next';
 
 interface DashboardSidebarProps {
   onClose?: () => void;

@@ -1,8 +1,3 @@
-import type { FC } from 'react';
-import { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import type { AppBarProps } from '@mui/material';
 import {
   AppBar,
   Avatar,
@@ -14,16 +9,24 @@ import {
   Tooltip
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { Menu as MenuIcon } from '../../icons/menu';
+import PropTypes from 'prop-types';
+import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { Bell as BellIcon } from '../../icons/bell';
+import { Menu as MenuIcon } from '../../icons/menu';
 import { Search as SearchIcon } from '../../icons/search';
 import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
 import { Users as UsersIcon } from '../../icons/users';
+
 import { AccountPopover } from './account-popover';
 import { ContactsPopover } from './contacts-popover';
 import { ContentSearchDialog } from './content-search-dialog';
-import { NotificationsPopover } from './notifications-popover';
 import { LanguagePopover } from './language-popover';
+import { NotificationsPopover } from './notifications-popover';
+
+import type { AppBarProps } from '@mui/material';
+import type { FC } from 'react';
 
 interface DashboardNavbarProps extends AppBarProps {
   onOpenSidebar?: () => void;
@@ -260,8 +263,7 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
   const { onOpenSidebar, ...other } = props;
 
   return (
-    <>
-      <DashboardNavbarRoot
+    <DashboardNavbarRoot
         sx={{
           left: {
             lg: 280
@@ -299,7 +301,6 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
           <AccountButton />
         </Toolbar>
       </DashboardNavbarRoot>
-    </>
   );
 };
 

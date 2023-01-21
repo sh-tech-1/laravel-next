@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { Box, Button, FormHelperText } from '@mui/material';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+
 import { useAuth } from '../../hooks/use-auth';
 import { useMounted } from '../../hooks/use-mounted';
+
+import type { FC } from 'react';
 
 export const Auth0Login: FC = (props) => {
   const isMounted = useMounted();

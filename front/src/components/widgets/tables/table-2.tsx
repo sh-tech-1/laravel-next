@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
-import numeral from 'numeral';
 import {
   Avatar,
   Box,
@@ -18,9 +15,14 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
+import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+import numeral from 'numeral';
+
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 interface Project {
   id: string;

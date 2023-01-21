@@ -1,7 +1,9 @@
 import { addDays, subDays } from 'date-fns';
-import type { Board, Card, CheckItem, Checklist, Column, Comment } from '../types/kanban';
+
 import { createResourceId } from '../utils/create-resource-id';
 import { deepCopy } from '../utils/deep-copy';
+
+import type { Board, Card, CheckItem, Checklist, Column, Comment } from '../types/kanban';
 
 // You'll see here that we start with a deep clone of the board.
 // The reason for that is to create a db session wannabe strategy.

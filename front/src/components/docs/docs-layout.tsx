@@ -1,8 +1,10 @@
-import type { FC, ReactNode } from 'react';
-import { useState } from 'react';
 import { styled } from '@mui/material/styles';
+import { useState } from 'react';
+
 import { DocsNavbar } from './docs-navbar';
 import { DocsSidebar } from './docs-sidebar';
+
+import type { FC, ReactNode } from 'react';
 
 interface DocsLayoutProps {
   children: ReactNode;

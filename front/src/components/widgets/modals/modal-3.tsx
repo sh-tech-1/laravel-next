@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -8,8 +7,11 @@ import {
   Paper,
   TextField
 } from '@mui/material';
+
 import { Search as SearchIcon } from '../../../icons/search';
 import { X as XIcon } from '../../../icons/x';
+
+import type { FC } from 'react';
 
 export const Modal3: FC = () => (
   <Box

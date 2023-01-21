@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
-import { subDays, subHours } from 'date-fns';
 import {
   Avatar,
   Box,
@@ -21,10 +18,15 @@ import {
   TextField,
   Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
+import { subDays, subHours } from 'date-fns';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { Search as SearchIcon } from '../../../icons/search';
+import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 interface Customer {
   id: string;

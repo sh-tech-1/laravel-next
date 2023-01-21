@@ -1,9 +1,11 @@
-import type { FC, ReactNode } from 'react';
-import { createContext, useEffect, useReducer } from 'react';
-import PropTypes from 'prop-types';
 import { Auth0Client } from '@auth0/auth0-spa-js';
+import PropTypes from 'prop-types';
+import { createContext, useEffect, useReducer } from 'react';
+
 import { auth0Config } from '../config';
+
 import type { User } from '../types/user';
+import type { FC, ReactNode } from 'react';
 
 let auth0Client: Auth0Client | null = null;
 
@@ -113,7 +115,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
     const initialize = async (): Promise<void> => {
       try {
         auth0Client = new Auth0Client({
-          redirect_uri: window.location.origin + '/authentication/authorize',
+          redirect_uri: `${window.location.origin  }/authentication/authorize`,
           domain: auth0Config.domain!,
           client_id: auth0Config.client_id!,
           cacheLocation: 'localstorage'

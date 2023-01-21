@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import ReceiptIcon from '@mui/icons-material/Receipt';
 import {
   Box,
   Button,
@@ -11,8 +11,10 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import ReceiptIcon from '@mui/icons-material/Receipt';
+
 import { CurrencyDollar as CurrencyDollarIcon } from '../../../icons/currency-dollar';
+
+import type { FC } from 'react';
 
 export const DetailList3: FC = () => (
   <Box

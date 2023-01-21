@@ -1,9 +1,3 @@
-import type { ChangeEvent, MouseEvent } from 'react';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import { endOfDay, startOfDay } from 'date-fns';
-import type { Theme } from '@mui/material';
 import {
   Box,
   Button,
@@ -14,17 +8,25 @@ import {
   useMediaQuery
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { endOfDay, startOfDay } from 'date-fns';
+import Head from 'next/head';
+import { useCallback, useEffect, useRef, useState } from 'react';
+
 import { invoiceApi } from '../../../__fake-api__/invoice-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import type { Filters } from '../../../components/dashboard/invoice/invoice-list-filters';
 import { InvoiceListFilters } from '../../../components/dashboard/invoice/invoice-list-filters';
 import { InvoiceListTable } from '../../../components/dashboard/invoice/invoice-list-table';
 import { useMounted } from '../../../hooks/use-mounted';
 import { Filter as FilterIcon } from '../../../icons/filter';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { gtm } from '../../../lib/gtm';
+
+import type { Filters } from '../../../components/dashboard/invoice/invoice-list-filters';
 import type { Invoice } from '../../../types/invoice';
+import type { Theme } from '@mui/material';
+import type { NextPage } from 'next';
+import type { ChangeEvent, MouseEvent } from 'react';
 
 const applyFilters = (
   invoices: Invoice[],

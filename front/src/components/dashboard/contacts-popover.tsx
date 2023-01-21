@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import { useEffect } from 'react';
-import { formatDistanceToNowStrict } from 'date-fns';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -13,9 +9,15 @@ import {
   Popover,
   Typography
 } from '@mui/material';
+import { formatDistanceToNowStrict } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+
 import { useDispatch, useSelector } from '../../store';
 import { getContacts } from '../../thunks/chat';
 import { StatusIndicator } from '../status-indicator';
+
+import type { FC } from 'react';
 
 interface ContactsPopoverProps {
   anchorEl: null | Element;

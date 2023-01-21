@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import {
   Box,
   Button,
@@ -13,9 +11,13 @@ import {
   Typography
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const data = {
   series: [

@@ -1,11 +1,14 @@
-import type { FC, ReactNode } from 'react';
-import { useEffect } from 'react';
+import { Box, Drawer, useMediaQuery } from '@mui/material';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import type { Theme } from '@mui/material';
-import { Box, Drawer, useMediaQuery } from '@mui/material';
-import { DocsSidebarSection } from './docs-sidebar-section';
+import { useEffect } from 'react';
+
 import { Scrollbar } from '../scrollbar';
+
+import { DocsSidebarSection } from './docs-sidebar-section';
+
+import type { Theme } from '@mui/material';
+import type { FC, ReactNode } from 'react';
 
 interface DocsSidebarProps {
   onClose?: () => void;

@@ -1,8 +1,3 @@
-import type { ChangeEvent, FC } from 'react';
-import { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
-import { Draggable, Droppable } from 'react-beautiful-dnd';
 import {
   Box,
   Chip,
@@ -14,13 +9,21 @@ import {
   MenuItem,
   OutlinedInput
 } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useRef, useState } from 'react';
+import { Draggable, Droppable } from 'react-beautiful-dnd';
+import toast from 'react-hot-toast';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import type { RootState } from '../../../store';
 import { useDispatch, useSelector } from '../../../store';
 import { clearColumn, deleteColumn, updateColumn } from '../../../thunks/kanban';
-import type { Column } from '../../../types/kanban';
+
 import { KanbanCard } from './kanban-card';
 import { KanbanCardAdd } from './kanban-card-add';
+
+import type { RootState } from '../../../store';
+import type { Column } from '../../../types/kanban';
+import type { ChangeEvent, FC } from 'react';
 
 interface KanbanColumnProps {
   columnId: string;

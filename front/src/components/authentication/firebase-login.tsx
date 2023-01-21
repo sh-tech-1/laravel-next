@@ -1,10 +1,12 @@
-import type { FC } from 'react';
+import { Alert, Box, Button, Divider, FormHelperText, TextField, Typography } from '@mui/material';
+import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
-import { useFormik } from 'formik';
-import { Alert, Box, Button, Divider, FormHelperText, TextField, Typography } from '@mui/material';
+
 import { useAuth } from '../../hooks/use-auth';
 import { useMounted } from '../../hooks/use-mounted';
+
+import type { FC } from 'react';
 
 export const FirebaseLogin: FC = (props) => {
   const isMounted = useMounted();
@@ -136,7 +138,7 @@ export const FirebaseLogin: FC = (props) => {
         {formik.errors.submit && (
           <Box sx={{ mt: 3 }}>
             <FormHelperText error>
-              {formik.errors.submit as string}
+              {formik.errors.submit }
             </FormHelperText>
           </Box>
         )}

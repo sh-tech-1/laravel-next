@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, ListItemIcon, ListItemText, MenuItem, Paper, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 interface LanguageOption {
   icon: string;

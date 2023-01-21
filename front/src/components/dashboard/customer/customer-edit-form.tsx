@@ -1,9 +1,3 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
-import * as Yup from 'yup';
-import { useFormik } from 'formik';
 import {
   Box,
   Button,
@@ -17,8 +11,16 @@ import {
   TextField,
   Typography
 } from '@mui/material';
-import type { Customer } from '../../../types/customer';
+import { useFormik } from 'formik';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+import toast from 'react-hot-toast';
+import * as Yup from 'yup';
+
 import { wait } from '../../../utils/wait';
+
+import type { Customer } from '../../../types/customer';
+import type { FC } from 'react';
 
 interface CustomerEditFormProps {
   customer: Customer;

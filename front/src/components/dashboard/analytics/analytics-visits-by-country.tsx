@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import numeral from 'numeral';
-import type { CardProps } from '@mui/material';
 import {
   Box,
   Button,
@@ -18,8 +14,14 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
-import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+import numeral from 'numeral';
+import { useState } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
+import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+
+import type { CardProps } from '@mui/material';
+import type { FC } from 'react';
 
 interface Country {
   flag: string;

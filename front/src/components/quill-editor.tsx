@@ -1,12 +1,15 @@
 import type { FC } from 'react';
+
 import { useRef } from 'react';
+
 import 'react-quill/dist/quill.snow.css';
+import { styled } from '@mui/material/styles';
 import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
-import type { ReactQuillProps } from 'react-quill';
-import { styled } from '@mui/material/styles';
+
 import type { Theme } from '@mui/material';
 import type { SxProps } from '@mui/system';
+import type { ReactQuillProps } from 'react-quill';
 
 interface QuillEditorProps {
   onChange?: (value: string) => void;

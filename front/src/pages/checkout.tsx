@@ -1,16 +1,18 @@
-import type { ChangeEvent, FormEvent } from 'react';
-import { useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import NextLink from 'next/link';
-import Head from 'next/head';
-import type { SelectChangeEvent } from '@mui/material';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useEffect, useState } from 'react';
+
 import { CheckoutBilling } from '../components/checkout/checkout-billing';
 import { CheckoutOrderSummary } from '../components/checkout/checkout-order-summary';
 import { ArrowLeft as ArrowLeftIcon } from '../icons/arrow-left';
 import { ArrowRight as ArrowRightIcon } from '../icons/arrow-right';
 import { Lock as LockIcon } from '../icons/lock';
 import { gtm } from '../lib/gtm';
+
+import type { SelectChangeEvent } from '@mui/material';
+import type { NextPage } from 'next';
+import type { ChangeEvent, FormEvent } from 'react';
 
 interface Product {
   id: string;

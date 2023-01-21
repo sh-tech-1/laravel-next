@@ -1,8 +1,4 @@
-import type { ChangeEvent } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import NextLink from 'next/link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import {
   Avatar,
   Box,
@@ -17,20 +13,26 @@ import {
   Tabs,
   Typography
 } from '@mui/material';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { jobApi } from '../../../../__fake-api__/job-api';
 import { AuthGuard } from '../../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../../components/dashboard/dashboard-layout';
+import { CompanyActivity } from '../../../../components/dashboard/jobs/company-activity';
+import { CompanyAssets } from '../../../../components/dashboard/jobs/company-assets';
 import { CompanyOverview } from '../../../../components/dashboard/jobs/company-overview';
 import { CompanyReviews } from '../../../../components/dashboard/jobs/company-reviews';
 import { CompanySummary } from '../../../../components/dashboard/jobs/company-summary';
-import { CompanyActivity } from '../../../../components/dashboard/jobs/company-activity';
 import { CompanyTeam } from '../../../../components/dashboard/jobs/company-team';
-import { CompanyAssets } from '../../../../components/dashboard/jobs/company-assets';
 import { useMounted } from '../../../../hooks/use-mounted';
 import { gtm } from '../../../../lib/gtm';
-import type { Company } from '../../../../types/job';
 import { getInitials } from '../../../../utils/get-initials';
+
+import type { Company } from '../../../../types/job';
+import type { NextPage } from 'next';
+import type { ChangeEvent } from 'react';
 
 const tabs = [
   { label: 'Overview', value: 'overview' },

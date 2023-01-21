@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
-import { formatDistanceToNowStrict } from 'date-fns';
 import {
   Avatar,
   AvatarGroup,
@@ -14,14 +10,20 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import { formatDistanceToNowStrict } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useRef, useState } from 'react';
+
 import { Archive as ArchiveIcon } from '../../../icons/archive';
-import { Bell as BellIcon } from '../../../icons/bell';
 import { Ban as BanIcon } from '../../../icons/ban';
+import { Bell as BellIcon } from '../../../icons/bell';
 import { Camera as CameraIcon } from '../../../icons/camera';
-import { Phone as PhoneIcon } from '../../../icons/phone';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import { Phone as PhoneIcon } from '../../../icons/phone';
 import { Trash as TrashIcon } from '../../../icons/trash';
+
 import type { Participant } from '../../../types/chat';
+import type { FC } from 'react';
 
 interface ChatThreadToolbarProps {
   participants: Participant[];

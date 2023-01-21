@@ -1,17 +1,20 @@
-import type { FC } from 'react';
-import { useEffect, useRef, useState } from 'react';
+import { Box, Divider } from '@mui/material';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Divider } from '@mui/material';
+import { useEffect, useRef, useState } from 'react';
+
 import { chatApi } from '../../../__fake-api__/chat-api';
-import type { RootState } from '../../../store';
 import { useDispatch, useSelector } from '../../../store';
 import { addMessage, getThread, markThreadAsSeen, setActiveThread } from '../../../thunks/chat';
-import type { Participant, Thread } from '../../../types/chat';
 import { Scrollbar } from '../../scrollbar';
+
 import { ChatMessageAdd } from './chat-message-add';
 import { ChatMessages } from './chat-messages';
 import { ChatThreadToolbar } from './chat-thread-toolbar';
+
+import type { RootState } from '../../../store';
+import type { Participant, Thread } from '../../../types/chat';
+import type { FC } from 'react';
 
 interface ChatThreadProps {
   threadKey: string;

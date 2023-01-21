@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Avatar,
   Box,
@@ -12,9 +11,12 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+
 import { Truck as TruckIcon } from '../../../icons/truck';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 interface Vehicle {
   id: string;

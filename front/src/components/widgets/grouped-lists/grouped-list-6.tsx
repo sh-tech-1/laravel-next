@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -11,6 +8,10 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format, subDays } from 'date-fns';
+import numeral from 'numeral';
+
+import type { FC } from 'react';
 
 const transactions = [
   {

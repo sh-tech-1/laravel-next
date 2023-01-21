@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Avatar, Box, Container, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const HomeTestimonials: FC = (props) => (
   <Box

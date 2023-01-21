@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import type { Theme } from '@mui/material';
 import { Button, Card, CardActions, CardHeader, Divider, useMediaQuery } from '@mui/material';
+import PropTypes from 'prop-types';
+
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
+
+import type { Theme } from '@mui/material';
+import type { FC } from 'react';
 
 interface CustomerBasicDetailsProps {
   address1?: string;

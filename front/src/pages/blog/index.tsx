@@ -1,17 +1,19 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import NextLink from 'next/link';
-import { Box, Button, Card, Container, Divider, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box, Button, Card, Container, Divider, Typography } from '@mui/material';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { blogApi } from '../../__fake-api__/blog-api';
 import { BlogNewsletter } from '../../components/blog/blog-newsletter';
 import { BlogPostCard } from '../../components/blog/blog-post-card';
 import { useMounted } from '../../hooks/use-mounted';
 import { ArrowLeft as ArrowLeftIcon } from '../../icons/arrow-left';
 import { gtm } from '../../lib/gtm';
+
 import type { Post } from '../../types/blog';
+import type { NextPage } from 'next';
 
 const BlogPostList: NextPage = () => {
   const isMounted = useMounted();

@@ -1,9 +1,10 @@
-import type { FC } from 'react';
-import { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { formatDistanceStrict } from 'date-fns';
 import { Box, Button, Card, Divider, Typography } from '@mui/material';
+import { formatDistanceStrict } from 'date-fns';
+import PropTypes from 'prop-types';
+import { Fragment } from 'react';
+
 import type { Job } from '../../../types/job';
+import type { FC } from 'react';
 
 interface CompanyJobsProps {
   jobs: Job[];

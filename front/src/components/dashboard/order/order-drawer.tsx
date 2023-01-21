@@ -1,8 +1,4 @@
-import type { FC, MutableRefObject } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import numeral from 'numeral';
+import EditIcon from '@mui/icons-material/Edit';
 import {
   Box,
   Button,
@@ -20,12 +16,18 @@ import {
   useMediaQuery
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import EditIcon from '@mui/icons-material/Edit';
+import { format } from 'date-fns';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { X as XIcon } from '../../../icons/x';
+import { Order } from '../../../types/order';
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
-import { Order } from '../../../types/order';
 import { Scrollbar } from '../../scrollbar';
+
+import type { FC, MutableRefObject } from 'react';
 
 interface OrderDrawerProps {
   containerRef?: MutableRefObject<HTMLDivElement | null>;

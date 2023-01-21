@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import { useEffect, useMemo, useState } from 'react';
-import PropTypes from 'prop-types';
-import { format, subDays, subHours } from 'date-fns';
 import {
   Avatar,
   Box,
@@ -15,12 +11,18 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import { format, subDays, subHours } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useEffect, useMemo, useState } from 'react';
+
 import { ChatAlt as ChatAltIcon } from '../../icons/chat-alt';
 import { MailOpen as MailOpenIcon } from '../../icons/mail-open';
-import { X as XIcon } from '../../icons/x';
 import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
+import { X as XIcon } from '../../icons/x';
 import { Notification } from '../../types/notification';
 import { Scrollbar } from '../scrollbar';
+
+import type { FC } from 'react';
 
 interface NotificationsPopoverProps {
   anchorEl: null | Element;

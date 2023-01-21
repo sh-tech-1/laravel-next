@@ -1,8 +1,3 @@
-import type { FC } from 'react';
-import { ChangeEvent, Fragment, MouseEvent, useState } from 'react';
-import numeral from 'numeral';
-import PropTypes from 'prop-types';
-import { toast } from 'react-hot-toast';
 import {
   Box,
   Button,
@@ -23,13 +18,20 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+import { ChangeEvent, Fragment, MouseEvent, useState } from 'react';
+import { toast } from 'react-hot-toast';
+
 import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Image as ImageIcon } from '../../../icons/image';
-import type { Product } from '../../../types/product';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { Product } from '../../../types/product';
+import type { FC } from 'react';
 
 interface ProductListTableProps {
   onPageChange: (event: MouseEvent<HTMLButtonElement> | null, newPage: number) => void;

@@ -1,10 +1,12 @@
-import type { ChangeEvent, FC, KeyboardEvent } from 'react';
-import { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Avatar, Box, IconButton, TextField, Tooltip } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useRef, useState } from 'react';
+
 import { PaperAirplane as PaperAirplaneIcon } from '../../../icons/paper-airplane';
-import { Photograph as PhotographIcon } from '../../../icons/photograph';
 import { PaperClip as PaperClipIcon } from '../../../icons/paper-clip';
+import { Photograph as PhotographIcon } from '../../../icons/photograph';
+
+import type { ChangeEvent, FC, KeyboardEvent } from 'react';
 
 interface ChatMessageAddProps {
   disabled?: boolean;

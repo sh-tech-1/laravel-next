@@ -1,16 +1,18 @@
-import type { ChangeEvent } from 'react';
-import { useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container, Divider, Tab, Tabs, Typography } from '@mui/material';
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { AccountBillingSettings } from '../../components/dashboard/account/account-billing-settings';
 import { AccountGeneralSettings } from '../../components/dashboard/account/account-general-settings';
 import { AccountNotificationsSettings } from '../../components/dashboard/account/account-notifications-settings';
-import { AccountTeamSettings } from '../../components/dashboard/account/account-team-settings';
 import { AccountSecuritySettings } from '../../components/dashboard/account/account-security-settings';
+import { AccountTeamSettings } from '../../components/dashboard/account/account-team-settings';
+import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
+import type { ChangeEvent } from 'react';
 
 const tabs = [
   { label: 'General', value: 'general' },

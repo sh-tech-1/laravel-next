@@ -1,7 +1,3 @@
-import type { FC, SyntheticEvent } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { formatDistanceStrict } from 'date-fns';
 import {
   Avatar,
   Box,
@@ -12,9 +8,15 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import { formatDistanceStrict } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { Star as StarIcon } from '../../../icons/star';
-import type { Review } from '../../../types/job';
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Review } from '../../../types/job';
+import type { FC, SyntheticEvent } from 'react';
 
 interface CompanyReviewsProps {
   reviews: Review[];

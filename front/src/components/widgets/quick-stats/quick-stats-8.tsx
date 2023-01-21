@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
-import { format, subDays } from 'date-fns';
 import { Avatar, Box, Card, Container, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { format, subDays } from 'date-fns';
+
 import { Refresh as RefreshIcon } from '../../../icons/refresh';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const getCategories = () => {
   const now = new Date();

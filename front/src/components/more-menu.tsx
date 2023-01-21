@@ -1,11 +1,13 @@
-import type { FC } from 'react';
-import { useRef, useState } from 'react';
 import { IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Tooltip } from '@mui/material';
+import { useRef, useState } from 'react';
+
 import { Archive as ArchiveIcon } from '../icons/archive';
 import { DocumentText as DocumentTextIcon } from '../icons/document-text';
 import { DotsHorizontal as DotsHorizontalIcon } from '../icons/dots-horizontal';
 import { Download as DownloadIcon } from '../icons/download';
 import { Duplicate as DuplicateIcon } from '../icons/duplicate';
+
+import type { FC } from 'react';
 
 export const MoreMenu: FC = (props) => {
   const anchorRef = useRef<HTMLButtonElement | null>(null);

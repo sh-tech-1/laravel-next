@@ -1,7 +1,8 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import NextLink from 'next/link';
+
+import type { FC } from 'react';
 
 export const HomeDevelopers: FC = (props) => {
   const theme = useTheme();

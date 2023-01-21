@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Avatar, Box, Chip, Grid, Typography } from '@mui/material';
-import type { Member } from '../../../types/job';
+import PropTypes from 'prop-types';
+
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Member } from '../../../types/job';
+import type { FC } from 'react';
 
 interface CompanyTeamProps {
   members: Member[];

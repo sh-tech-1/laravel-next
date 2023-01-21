@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import propTypes from 'prop-types';
-import type { Theme } from '@mui/material';
 import { Box, Button, Divider, Typography } from '@mui/material';
-import type { SxProps } from '@mui/system';
+import propTypes from 'prop-types';
+
 import { Check as CheckIcon } from '../../icons/check';
+
+import type { Theme } from '@mui/material';
+import type { SxProps } from '@mui/system';
+import type { FC } from 'react';
 
 interface PricingPlanProps {
   cta: string;

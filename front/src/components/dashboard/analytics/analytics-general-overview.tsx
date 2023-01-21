@@ -1,11 +1,13 @@
-import { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import { Avatar, Box, Button, Card, CardActions, Divider, Grid, Typography } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+import { FC } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
 import { ChevronUp as ChevronUpIcon } from '../../../icons/chevron-up';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
 
 const LineChart: FC = () => {
   const theme = useTheme();

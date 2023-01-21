@@ -1,6 +1,7 @@
-import type { FC, ReactNode } from 'react';
-import { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { createContext, useEffect, useState } from 'react';
+
+import type { FC, ReactNode } from 'react';
 
 export interface Settings {
   direction?: 'ltr' | 'rtl';

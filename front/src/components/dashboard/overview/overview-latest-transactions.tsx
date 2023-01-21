@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -12,8 +9,13 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format, subDays } from 'date-fns';
+import numeral from 'numeral';
+
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 interface Transaction {
   id: string;

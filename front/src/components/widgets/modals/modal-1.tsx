@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import { Box, Button, Divider, IconButton, Input, Paper, Tooltip, Typography } from '@mui/material';
 import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
-import { QuillEditor } from '../../quill-editor';
+import { Box, Button, Divider, IconButton, Input, Paper, Tooltip, Typography } from '@mui/material';
+
 import { ArrowsExpand as ArrowsExpandIcon } from '../../../icons/arrows-expand';
 import { X as XIcon } from '../../../icons/x';
+import { QuillEditor } from '../../quill-editor';
+
+import type { FC } from 'react';
 
 export const Modal1: FC = () => (
   <Box

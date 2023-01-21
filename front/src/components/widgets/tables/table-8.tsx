@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -13,7 +11,11 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+
+import type { FC } from 'react';
 
 interface Country {
   flag: string;

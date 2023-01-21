@@ -1,5 +1,4 @@
-import type { FC } from 'react';
-import { useRef, useState } from 'react';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {
   Box,
   Button,
@@ -11,7 +10,9 @@ import {
   Paper,
   Popper
 } from '@mui/material';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { useRef, useState } from 'react';
+
+import type { FC } from 'react';
 
 const options = [
   'Create a merge commit',

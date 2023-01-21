@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { useEffect, useState } from 'react';
 import {
   Box,
   Button,
@@ -9,14 +7,20 @@ import {
   IconButton,
   Typography
 } from '@mui/material';
-import type { Settings } from '../contexts/settings-context';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+
+
 import { useSettings } from '../hooks/use-settings';
 import { X as XIcon } from '../icons/x';
+
 // @ts-ignore
-import LightThemeIcon from '../components/light-theme.svg';
+import DarkThemeIcon from "./dark-theme.svg";
+import LightThemeIcon from "./light-theme.svg";
+
 // @ts-ignore
-import DarkThemeIcon from '../components/dark-theme.svg';
-import PropTypes from 'prop-types';
+import type { Settings } from '../contexts/settings-context';
+import type { FC } from 'react';
 
 interface SettingsDrawerProps {
   onClose?: () => void;

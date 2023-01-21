@@ -1,7 +1,9 @@
-import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
-import type { Contact, Message, Thread } from '../types/chat';
+
 import { objFromArray } from '../utils/obj-from-array';
+
+import type { Contact, Message, Thread } from '../types/chat';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 interface ChatState {
   activeThreadId?: string;

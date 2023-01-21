@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
-import { subDays, subHours } from 'date-fns';
 import {
   Box,
   Card,
@@ -18,13 +15,18 @@ import {
   TableRow,
   TextField
 } from '@mui/material';
+import { subDays, subHours } from 'date-fns';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { Image as ImageIcon } from '../../../icons/image';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { Search as SearchIcon } from '../../../icons/search';
 import { Scrollbar } from '../../scrollbar';
-import type { SeverityPillColor } from '../../severity-pill';
 import { SeverityPill } from '../../severity-pill';
+
+import type { SeverityPillColor } from '../../severity-pill';
+import type { FC } from 'react';
 
 type InventoryType = 'in_stock' | 'limited' | 'out_of_stock';
 

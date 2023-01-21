@@ -1,10 +1,12 @@
-import type { ChangeEvent, FC, KeyboardEvent } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
 import { Avatar, Box, TextField } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+
 import { useDispatch } from '../../../store';
 import { addComment } from '../../../thunks/kanban';
+
+import type { ChangeEvent, FC, KeyboardEvent } from 'react';
 
 interface KanbanCommentAddProps {
   cardId: string;

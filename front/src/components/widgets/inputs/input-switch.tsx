@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Grid, Switch, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const InputSwitch: FC = () => (
   <Box

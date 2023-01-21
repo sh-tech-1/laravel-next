@@ -1,7 +1,4 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import Markdown from 'react-markdown';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {
   Avatar,
   Box,
@@ -14,10 +11,16 @@ import {
   Typography
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import type { Company } from '../../../types/job';
-import { CompanyJobs } from './company-jobs';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+import Markdown from 'react-markdown';
+
 import { getInitials } from '../../../utils/get-initials';
+
+import { CompanyJobs } from './company-jobs';
+
+import type { Company } from '../../../types/job';
+import type { FC } from 'react';
 
 interface CompanyOverviewProps {
   company: Company;

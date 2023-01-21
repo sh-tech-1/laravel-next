@@ -1,11 +1,13 @@
-import type { FC } from 'react';
 import { Avatar, Box, Button, IconButton, TextField } from '@mui/material';
+
 import { EmojiHappy as EmojiHappyIcon } from '../../icons/emoji-happy';
 import { Link as LinkIcon } from '../../icons/link';
 import { PaperClip as PaperClipIcon } from '../../icons/paper-clip';
 import { Photograph as PhotographIcon } from '../../icons/photograph';
 import { Plus as PlusIcon } from '../../icons/plus';
 import { getInitials } from '../../utils/get-initials';
+
+import type { FC } from 'react';
 
 export const BlogCommentAdd: FC = (props) => {
   // To get the user from the authContext, you can use

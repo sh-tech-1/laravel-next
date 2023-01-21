@@ -1,6 +1,7 @@
-import type { FC } from 'react';
 import { Box, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
+import type { FC } from 'react';
 
 export const ColorsMain: FC = () => {
   const theme = useTheme();

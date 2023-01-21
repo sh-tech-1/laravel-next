@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { GuestGuard } from '../components/authentication/guest-guard';
+
+import type { FC } from 'react';
 
 /**
  * @deprecated Use the layout strategy

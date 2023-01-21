@@ -1,7 +1,8 @@
-import type { FC } from 'react';
+import WarningIcon from '@mui/icons-material/WarningOutlined';
 import { Avatar, Box, Button, Container, Paper, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import WarningIcon from '@mui/icons-material/WarningOutlined';
+
+import type { FC } from 'react';
 
 export const Modal12: FC = () => (
   <Box

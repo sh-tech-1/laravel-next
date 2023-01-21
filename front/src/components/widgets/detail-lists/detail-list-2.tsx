@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -11,9 +10,12 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+
 import { Lock as LockIcon } from '../../../icons/lock';
 import { User as UserIcon } from '../../../icons/user';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 export const DetailList2: FC = () => (
   <Box

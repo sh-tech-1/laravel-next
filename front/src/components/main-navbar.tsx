@@ -1,9 +1,12 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import NextLink from 'next/link';
 import { AppBar, Box, Button, Container, IconButton, Link, Toolbar } from '@mui/material';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+
 import { Menu as MenuIcon } from '../icons/menu';
+
 import { Logo } from './logo';
+
+import type { FC } from 'react';
 
 interface MainNavbarProps {
   onOpenSidebar?: () => void;

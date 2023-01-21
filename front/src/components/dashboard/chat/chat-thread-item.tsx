@@ -1,10 +1,11 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import type { Locale } from 'date-fns';
+import { Avatar, AvatarGroup, Box, ListItem, ListItemAvatar, Typography } from '@mui/material';
 import { formatDistanceStrict } from 'date-fns';
 import locale from 'date-fns/locale/en-US';
-import { Avatar, AvatarGroup, Box, ListItem, ListItemAvatar, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+
 import type { Thread } from '../../../types/chat';
+import type { Locale } from 'date-fns';
+import type { FC } from 'react';
 
 const formatDistanceLocale: Record<string, string> = {
   lessThanXSeconds: '{{count}}s',
@@ -34,10 +35,10 @@ const customLocale: Locale = {
 
     if (options.addSuffix) {
       if (options.comparison > 0) {
-        return 'in ' + result;
-      } else {
-        return result + ' ago';
-      }
+        return `in ${  result}`;
+      } 
+        return `${result  } ago`;
+      
     }
 
     return result;

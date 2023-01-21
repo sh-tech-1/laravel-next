@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
 import {
   Box,
   Button,
@@ -15,10 +13,14 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import { Logo } from '../../logo';
+import { useState } from 'react';
+
 import { Pencil as PencilIcon } from '../../../icons/pencil';
+import { Logo } from '../../logo';
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
+
+import type { FC } from 'react';
 
 const plans = [
   {

@@ -1,8 +1,10 @@
-import type { ChangeEvent, FC } from 'react';
-import { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Button, Checkbox, FormControlLabel, Menu, MenuItem } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useRef, useState } from 'react';
+
 import { ChevronDown as ChevronDownIcon } from '../icons/chevron-down';
+
+import type { ChangeEvent, FC } from 'react';
 
 interface MultiSelectProps {
   label: string;

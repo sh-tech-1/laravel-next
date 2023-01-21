@@ -1,6 +1,8 @@
-import type { FC } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
+
 import { QuillEditor } from '../../quill-editor';
+
+import type { FC } from 'react';
 
 export const Form10: FC = () => (
   <Box

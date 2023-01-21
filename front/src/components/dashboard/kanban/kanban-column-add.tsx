@@ -1,10 +1,12 @@
-import type { ChangeEvent, FC } from 'react';
+import { Box, Button, Link, OutlinedInput, Typography } from '@mui/material';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
-import { Box, Button, Link, OutlinedInput, Typography } from '@mui/material';
+
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { useDispatch } from '../../../store';
 import { createColumn } from '../../../thunks/kanban';
+
+import type { ChangeEvent, FC } from 'react';
 
 export const KanbanColumnAdd: FC = (props) => {
   const dispatch = useDispatch();

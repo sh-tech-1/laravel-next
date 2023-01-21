@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { AuthGuard } from '../components/authentication/auth-guard';
+
+import type { FC } from 'react';
 
 /**
  * @deprecated Use the layout strategy

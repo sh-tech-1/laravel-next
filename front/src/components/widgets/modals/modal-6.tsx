@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -9,8 +8,11 @@ import {
   Paper,
   Typography
 } from '@mui/material';
+
 import { Cog as CogIcon } from '../../../icons/cog';
 import { User as UserIcon } from '../../../icons/user';
+
+import type { FC } from 'react';
 
 export const Modal6: FC = () => (
   <Box

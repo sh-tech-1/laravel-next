@@ -1,13 +1,16 @@
-import type { FC } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Box, Grid } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useCallback, useEffect, useState } from 'react';
+
 import { socialApi } from '../../../__fake-api__/social-api';
 import { useMounted } from '../../../hooks/use-mounted';
-import type { Post, Profile } from '../../../types/social';
+
+import { SocialAbout } from './social-about';
 import { SocialPostAdd } from './social-post-add';
 import { SocialPostCard } from './social-post-card';
-import { SocialAbout } from './social-about';
+
+import type { Post, Profile } from '../../../types/social';
+import type { FC } from 'react';
 
 interface SocialProfileTimelineProps {
   profile: Profile;

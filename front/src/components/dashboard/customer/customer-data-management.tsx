@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const CustomerDataManagement: FC = (props) => (
   <Card {...props}>

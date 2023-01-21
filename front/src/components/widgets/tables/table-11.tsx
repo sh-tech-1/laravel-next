@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -13,7 +11,11 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 interface OrderItem {
   id: string;

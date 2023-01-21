@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import {
   Box,
   Card,
@@ -14,10 +12,14 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+
 import { AcademicCap as AcademicCapIcon } from '../../../icons/academic-cap';
 import { Briefcase as BriefcaseIcon } from '../../../icons/briefcase';
 import { Home as HomeIcon } from '../../../icons/home';
 import { Mail as MailIcon } from '../../../icons/mail';
+
+import type { FC } from 'react';
 
 interface SocialAboutProps {
   currentCity: string;

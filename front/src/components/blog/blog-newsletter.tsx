@@ -1,6 +1,7 @@
-import type { FC } from 'react';
 import { Box, Button, Card, Grid, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
+import type { FC } from 'react';
 
 export const BlogNewsletter: FC = () => {
   const theme = useTheme();

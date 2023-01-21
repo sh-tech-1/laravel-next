@@ -1,7 +1,3 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import NextLink from 'next/link';
 import {
   Avatar,
   Box,
@@ -14,11 +10,15 @@ import {
   Link,
   Typography
 } from '@mui/material';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { jobApi } from '../../../__fake-api__/job-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { JobsBrowseFilter } from '../../../components/dashboard/jobs/jobs-browse-filter';
 import { CompanyJobs } from '../../../components/dashboard/jobs/company-jobs';
+import { JobsBrowseFilter } from '../../../components/dashboard/jobs/jobs-browse-filter';
 import { useMounted } from '../../../hooks/use-mounted';
 import { BadgeCheckOutlined as BadgeCheckOutlinedIcon } from '../../../icons/badge-check-outlined';
 import { ChevronLeft as ChevronLeftIcon } from '../../../icons/chevron-left';
@@ -26,8 +26,10 @@ import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { Star as StarIcon } from '../../../icons/star';
 import { Users as UsersIcon } from '../../../icons/users';
 import { gtm } from '../../../lib/gtm';
-import type { Company } from '../../../types/job';
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Company } from '../../../types/job';
+import type { NextPage } from 'next';
 
 const JobBrowse: NextPage = () => {
   const isMounted = useMounted();

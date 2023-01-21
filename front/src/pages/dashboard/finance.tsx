@@ -1,19 +1,21 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { FinanceCostBreakdown } from '../../components/dashboard/finance/finance-cost-breakdown';
-import { FinanceOverview } from '../../components/dashboard/finance/finance-overview';
 import { FinanceIncrementalSales } from '../../components/dashboard/finance/finance-incremental-sales';
+import { FinanceOverview } from '../../components/dashboard/finance/finance-overview';
 import { FinanceProfitableProducts } from '../../components/dashboard/finance/finance-profitable-products';
 import { FinanceSalesByContinent } from '../../components/dashboard/finance/finance-sales-by-continent';
 import { FinanceSalesRevenue } from '../../components/dashboard/finance/finance-sales-revenue';
+import { Cog as CogIcon } from '../../icons/cog';
 import { Download as DownloadIcon } from '../../icons/download';
 import { Reports as ReportsIcon } from '../../icons/reports';
-import { Cog as CogIcon } from '../../icons/cog';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const Finance: NextPage = () => {
   useEffect(() => {

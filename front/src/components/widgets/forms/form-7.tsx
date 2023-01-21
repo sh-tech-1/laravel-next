@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Button, Grid, Link, TextField, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const Form7: FC = () => (
   <Box

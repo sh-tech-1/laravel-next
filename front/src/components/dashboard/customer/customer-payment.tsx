@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import type { Theme } from '@mui/material';
 import { Button, Card, CardActions, CardHeader, Divider, useMediaQuery } from '@mui/material';
+
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
+
+import type { Theme } from '@mui/material';
+import type { FC } from 'react';
 
 export const CustomerPayment: FC = (props) => {
   const mdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));

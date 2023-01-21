@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import type { PaletteMode } from '@mui/material';
 import {
   Avatar,
   Box,
@@ -14,10 +11,15 @@ import {
   Typography
 } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+import { useState } from 'react';
+
 import { Cog as CogIcon } from '../../icons/cog';
 import { Lock as LockIcon } from '../../icons/lock';
 import { MinusOutlined as MinusOutlinedIcon } from '../../icons/minus-outlined';
 import { Template as TemplateIcon } from '../../icons/template';
+
+import type { PaletteMode } from '@mui/material';
+import type { FC } from 'react';
 
 interface Feature {
   icon: typeof SvgIcon;

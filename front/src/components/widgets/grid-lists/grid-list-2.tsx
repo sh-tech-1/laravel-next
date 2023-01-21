@@ -1,6 +1,4 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
-import numeral from 'numeral';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import {
   Avatar,
   Box,
@@ -15,8 +13,12 @@ import {
   Typography
 } from '@mui/material';
 import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+import numeral from 'numeral';
+
 import { Users as UsersIcon } from '../../../icons/users';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

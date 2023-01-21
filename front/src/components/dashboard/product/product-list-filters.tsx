@@ -1,10 +1,12 @@
-import type { ChangeEvent, FC, KeyboardEvent } from 'react';
-import { useMemo, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Box, Chip, Divider, Input, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useMemo, useState } from 'react';
+
 import { useUpdateEffect } from '../../../hooks/use-update-effect';
 import { Search as SearchIcon } from '../../../icons/search';
 import { MultiSelect } from '../../multi-select';
+
+import type { ChangeEvent, FC, KeyboardEvent } from 'react';
 
 export interface Filters {
   name?: string;
@@ -122,9 +124,7 @@ export const ProjectListFilters: FC<ProjectListFiltersProps> = (props) => {
   );
 
   const handleDelete = (filterItem: FilterItem): void => {
-    setFilterItems((prevState) => prevState.filter((_filterItem) => {
-      return !(filterItem.field === _filterItem.field && filterItem.value === _filterItem.value);
-    }));
+    setFilterItems((prevState) => prevState.filter((_filterItem) => !(filterItem.field === _filterItem.field && filterItem.value === _filterItem.value)));
   };
 
   const handleQueryChange = (event: ChangeEvent<HTMLInputElement>): void => {

@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
 
 type Variant = 'light' | 'primary';
 

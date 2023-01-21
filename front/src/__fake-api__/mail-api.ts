@@ -1,5 +1,6 @@
-import type { Email, Label } from '../types/mail';
 import { deepCopy } from '../utils/deep-copy';
+
+import type { Email, Label } from '../types/mail';
 
 const now = new Date();
 
@@ -259,8 +260,8 @@ class MailApi {
           []
         );
 
-        if (label && customLabels.includes(label!)) {
-          filteredEmails = emails.filter((email) => email.labelIds.includes(label!));
+        if (label && customLabels.includes(label)) {
+          filteredEmails = emails.filter((email) => email.labelIds.includes(label));
         } else {
           switch (label) {
             case undefined:

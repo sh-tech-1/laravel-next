@@ -1,8 +1,9 @@
-import type { FC } from 'react';
+import { Avatar, Box, Link, Typography } from '@mui/material';
+import { formatDistanceToNowStrict } from 'date-fns';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { formatDistanceToNowStrict } from 'date-fns';
-import { Avatar, Box, Link, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 interface SocialCommentProps {
   authorAvatar: string;

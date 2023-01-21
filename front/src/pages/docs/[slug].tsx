@@ -1,13 +1,15 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import ErrorPage from 'next/error';
-import { useRouter } from 'next/router';
 import { Container } from '@mui/material';
+import ErrorPage from 'next/error';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+
 import { DocsContent } from '../../components/docs/docs-content';
 import { DocsLayout } from '../../components/docs/docs-layout';
 import { gtm } from '../../lib/gtm';
 import { getArticleBySlug, getArticles } from '../../utils/docs';
+
+import type { NextPage } from 'next';
 
 interface Article {
   content?: string;
@@ -19,13 +21,11 @@ export const getStaticPaths = () => {
   const articles = getArticles(['slug']);
 
   return {
-    paths: articles.map((article) => {
-      return {
+    paths: articles.map((article) => ({
         params: {
           slug: article.slug
         }
-      };
-    }),
+      })),
     fallback: false
   };
 };

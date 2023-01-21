@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import {
   Box,
   Button,
@@ -13,9 +10,14 @@ import {
   Typography
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useCallback, useEffect, useState } from 'react';
+
 import { useMounted } from '../../../hooks/use-mounted';
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const getRandomInt = (min: number, max: number): number => {
   min = Math.ceil(min);

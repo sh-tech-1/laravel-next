@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+
 import { LightBulb as LightBulbIcon } from '../icons/light-bulb';
+
+import type { FC } from 'react';
 
 interface TipProps {
   message: string;

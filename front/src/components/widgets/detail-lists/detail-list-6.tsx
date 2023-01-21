@@ -1,7 +1,8 @@
-import type { FC } from 'react';
-import Markdown from 'react-markdown';
 import { Box, Card, CardContent, Chip, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Markdown from 'react-markdown';
+
+import type { FC } from 'react';
 
 const MarkdownWrapper = styled('div')(
   ({ theme }) => ({

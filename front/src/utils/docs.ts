@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
+
 import matter from 'gray-matter';
 
 interface Article {
@@ -12,9 +13,7 @@ type Field = 'slug' | 'content' | 'title';
 
 const articlesDirectory = join(process.cwd(), '_docs');
 
-export const getArticleSlugs = (): string[] => {
-  return readdirSync(articlesDirectory);
-};
+export const getArticleSlugs = (): string[] => readdirSync(articlesDirectory);
 
 export const getArticleBySlug = (slug: string, fields: Field[] = []): Article => {
   const realSlug = slug.replace(/\.md$/, '');

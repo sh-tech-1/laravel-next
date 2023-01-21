@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Avatar, Box, Card, CardContent, Divider, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import { getInitials } from '../../../utils/get-initials';
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
+
 import type { Company } from '../../../types/job';
-import { getInitials } from '../../../utils/get-initials';
+import type { FC } from 'react';
 
 interface CompanySummaryProps {
   company: Company;

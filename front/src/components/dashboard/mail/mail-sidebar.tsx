@@ -1,12 +1,14 @@
-import type { FC, MutableRefObject } from 'react';
-import { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import type { Theme } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
 import { Box, Button, Drawer, List, ListSubheader, Typography, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import AddIcon from '@mui/icons-material/Add';
-import type { Label, LabelType } from '../../../types/mail';
+import PropTypes from 'prop-types';
+import { Fragment } from 'react';
+
 import { MailLabel } from './mail-label';
+
+import type { Label, LabelType } from '../../../types/mail';
+import type { Theme } from '@mui/material';
+import type { FC, MutableRefObject } from 'react';
 
 interface MailSidebarProps {
   containerRef?: MutableRefObject<HTMLDivElement | null>;
@@ -93,7 +95,7 @@ export const MailSidebar: FC<MailSidebarProps> = (props) => {
         {(Object.keys(groupedLabels) as LabelType[]).map((type) => (
           <Fragment key={type}>
             {type === 'custom' && (
-              <ListSubheader disableSticky={true}>
+              <ListSubheader disableSticky>
                 <Typography
                   color="textSecondary"
                   variant="overline"

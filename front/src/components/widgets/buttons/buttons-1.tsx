@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Button } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const Buttons1: FC = () => (
   <Box

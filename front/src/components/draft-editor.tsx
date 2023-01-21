@@ -1,11 +1,12 @@
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import type { FC } from 'react';
+import { styled } from '@mui/material/styles';
 import dynamic from 'next/dynamic';
 import PropTypes from 'prop-types';
-import type { EditorProps } from 'react-draft-wysiwyg';
-import { styled } from '@mui/material/styles';
+
 import type { Theme } from '@mui/material';
 import type { SxProps } from '@mui/system';
+import type { FC } from 'react';
+import type { EditorProps } from 'react-draft-wysiwyg';
 
 const Editor = dynamic<EditorProps>(
   () => import('react-draft-wysiwyg').then((m) => m.Editor),

@@ -1,10 +1,12 @@
-import type { FC, ReactNode } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { Footer } from './footer';
 import { MainNavbar } from './main-navbar';
 import { MainSidebar } from './main-sidebar';
+
+import type { FC, ReactNode } from 'react';
 
 interface MainLayoutProps {
   children?: ReactNode;

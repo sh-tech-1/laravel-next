@@ -1,15 +1,17 @@
-import type { ChangeEvent, FC } from 'react';
-import PropTypes from 'prop-types';
-import NextLink from 'next/link';
-import { format } from 'date-fns';
+import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 import { Avatar, Box, Checkbox, Chip, IconButton, Tooltip, Typography } from '@mui/material';
 import { amber } from '@mui/material/colors';
-import LabelImportantIcon from '@mui/icons-material/LabelImportant';
+import { format } from 'date-fns';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+
 import { PaperClip as PaperClipIcon } from '../../../icons/paper-clip';
 import { Star as StarIcon } from '../../../icons/star';
 import { StarOutlined as StarOutlinedIcon } from '../../../icons/star-outlined';
-import type { Email } from '../../../types/mail';
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Email } from '../../../types/mail';
+import type { ChangeEvent, FC } from 'react';
 
 interface MailItemProps {
   email: Email;

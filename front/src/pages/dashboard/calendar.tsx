@@ -3,28 +3,30 @@ import '@fullcalendar/daygrid/main.css';
 import '@fullcalendar/timegrid/main.css';
 import '@fullcalendar/list/main.css';
 import '@fullcalendar/timeline/main.css';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import type { DateSelectArg, EventClickArg, EventDropArg } from '@fullcalendar/react';
-import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import type { EventResizeDoneArg } from '@fullcalendar/interaction';
 import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
+import FullCalendar from '@fullcalendar/react';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import timelinePlugin from '@fullcalendar/timeline';
-import type { Theme } from '@mui/material';
 import { Box, useMediaQuery } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
+import Head from 'next/head';
+import { useCallback, useEffect, useRef, useState } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { CalendarEventDialog } from '../../components/dashboard/calendar/calendar-event-dialog';
 import { CalendarToolbar } from '../../components/dashboard/calendar/calendar-toolbar';
+import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { gtm } from '../../lib/gtm';
 import { useDispatch, useSelector } from '../../store';
 import { getEvents, updateEvent } from '../../thunks/calendar';
+
 import type { CalendarView } from '../../types/calendar';
+import type { EventResizeDoneArg } from '@fullcalendar/interaction';
+import type { DateSelectArg, EventClickArg, EventDropArg } from '@fullcalendar/react';
+import type { Theme } from '@mui/material';
+import type { NextPage } from 'next';
 
 const FullCalendarWrapper = styled('div')(
   ({ theme }) => ({

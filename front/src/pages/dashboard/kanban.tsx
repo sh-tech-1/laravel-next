@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
+import { Box, Typography } from '@mui/material';
 import Head from 'next/head';
-import type { DropResult } from 'react-beautiful-dnd';
+import { useEffect } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import toast from 'react-hot-toast';
-import { Box, Typography } from '@mui/material';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { KanbanColumn } from '../../components/dashboard/kanban/kanban-column';
@@ -12,6 +11,9 @@ import { KanbanColumnAdd } from '../../components/dashboard/kanban/kanban-column
 import { gtm } from '../../lib/gtm';
 import { useDispatch, useSelector } from '../../store';
 import { getBoard, moveCard } from '../../thunks/kanban';
+
+import type { NextPage } from 'next';
+import type { DropResult } from 'react-beautiful-dnd';
 
 const Kanban: NextPage = () => {
   const dispatch = useDispatch();

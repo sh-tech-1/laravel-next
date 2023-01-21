@@ -1,7 +1,3 @@
-import type { ChangeEvent, MouseEvent } from 'react';
-import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import {
   Box,
   Button,
@@ -14,6 +10,9 @@ import {
   Typography
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Head from 'next/head';
+import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
+
 import { orderApi } from '../../../__fake-api__/order-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
@@ -23,7 +22,10 @@ import { useMounted } from '../../../hooks/use-mounted';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { Search as SearchIcon } from '../../../icons/search';
 import { gtm } from '../../../lib/gtm';
+
 import type { Order, OrderStatus } from '../../../types/order';
+import type { NextPage } from 'next';
+import type { ChangeEvent, MouseEvent } from 'react';
 
 interface Filters {
   query?: string;

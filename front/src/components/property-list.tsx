@@ -1,6 +1,7 @@
-import type { FC, ReactNode } from 'react';
-import PropTypes from 'prop-types';
 import { List } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import type { FC, ReactNode } from 'react';
 
 interface PropertyListProps {
   children: ReactNode;

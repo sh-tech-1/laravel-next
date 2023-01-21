@@ -1,7 +1,3 @@
-import type { ChangeEvent, MouseEvent } from 'react';
-import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import {
   Box,
   Button,
@@ -15,17 +11,23 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import Head from 'next/head';
+import { FormEvent, useCallback, useEffect, useRef, useState } from 'react';
+
 import { customerApi } from '../../../__fake-api__/customer-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { CustomerListTable } from '../../../components/dashboard/customer/customer-list-table';
+import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { useMounted } from '../../../hooks/use-mounted';
 import { Download as DownloadIcon } from '../../../icons/download';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { Search as SearchIcon } from '../../../icons/search';
 import { Upload as UploadIcon } from '../../../icons/upload';
 import { gtm } from '../../../lib/gtm';
+
 import type { Customer } from '../../../types/customer';
+import type { NextPage } from 'next';
+import type { ChangeEvent, MouseEvent } from 'react';
 
 interface Filters {
   query?: string;

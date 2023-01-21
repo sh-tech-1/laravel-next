@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { addDays, format, subMinutes } from 'date-fns';
-import numeral from 'numeral';
 import {
   Avatar,
   Box,
@@ -12,6 +9,10 @@ import {
   ListItem,
   Typography
 } from '@mui/material';
+import { addDays, format, subMinutes } from 'date-fns';
+import numeral from 'numeral';
+
+import type { FC } from 'react';
 
 export const DetailList7: FC = () => (
   <Box

@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import NextLink from 'next/link';
-import Head from 'next/head';
-import { format } from 'date-fns';
-import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
+import { format } from 'date-fns';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { orderApi } from '../../../__fake-api__/order-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
@@ -16,7 +16,9 @@ import { Calendar as CalendarIcon } from '../../../icons/calendar';
 import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { gtm } from '../../../lib/gtm';
+
 import type { Order } from '../../../types/order';
+import type { NextPage } from 'next';
 
 const OrderDetails: NextPage = () => {
   const isMounted = useMounted();

@@ -1,8 +1,10 @@
-import type { Direction, Theme } from '@mui/material';
 import { createTheme as createMuiTheme, responsiveFontSizes } from '@mui/material/styles';
+
 import { baseThemeOptions } from './base-theme-options';
 import { darkThemeOptions } from './dark-theme-options';
 import { lightThemeOptions } from './light-theme-options';
+
+import type { Direction, Theme } from '@mui/material';
 
 interface Neutral {
   100: string;

@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { ChangeEvent, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import {
   Box,
   Checkbox,
@@ -10,6 +7,9 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+import { ChangeEvent, useEffect, useState } from 'react';
+
 import { ChevronLeft as ChevronLeftIcon } from '../../../icons/chevron-left';
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
@@ -18,7 +18,10 @@ import { Refresh as RefreshIcon } from '../../../icons/refresh';
 import { Search as SearchIcon } from '../../../icons/search';
 import { useDispatch, useSelector } from '../../../store';
 import { getEmails } from '../../../thunks/mail';
+
 import { MailItem } from './mail-item';
+
+import type { FC } from 'react';
 
 interface MailListProps {
   label?: string;

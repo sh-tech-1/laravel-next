@@ -1,19 +1,22 @@
-import type { ChangeEvent, FC, MutableRefObject } from 'react';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import type { Theme } from '@mui/material';
 import { Box, Button, Drawer, IconButton, List, Typography, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import NextLink from 'next/link';
+import { useRouter } from 'next/router';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { chatApi } from '../../../__fake-api__/chat-api';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { X as XIcon } from '../../../icons/x';
 import { useSelector } from '../../../store';
-import type { Contact } from '../../../types/chat';
 import { Scrollbar } from '../../scrollbar';
+
 import { ChatContactSearch } from './chat-contact-search';
 import { ChatThreadItem } from './chat-thread-item';
+
+import type { Contact } from '../../../types/chat';
+import type { Theme } from '@mui/material';
+import type { ChangeEvent, FC, MutableRefObject } from 'react';
 
 interface ChatSidebarProps {
   containerRef?: MutableRefObject<HTMLDivElement | null>;

@@ -1,10 +1,3 @@
-import type { FC } from 'react';
-import { useMemo } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
-import { addMinutes } from 'date-fns';
-import * as Yup from 'yup';
-import { useFormik } from 'formik';
 import {
   Box,
   Button,
@@ -18,10 +11,19 @@ import {
   Typography
 } from '@mui/material';
 import { DateTimePicker } from '@mui/x-date-pickers';
+import { addMinutes } from 'date-fns';
+import { useFormik } from 'formik';
+import PropTypes from 'prop-types';
+import { useMemo } from 'react';
+import toast from 'react-hot-toast';
+import * as Yup from 'yup';
+
 import { Trash as TrashIcon } from '../../../icons/trash';
 import { useDispatch } from '../../../store';
 import { createEvent, deleteEvent, updateEvent } from '../../../thunks/calendar';
+
 import type { CalendarEvent } from '../../../types/calendar';
+import type { FC } from 'react';
 
 interface CalendarEventFormProps {
   event?: CalendarEvent;

@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Badge, Box, Button, Divider, Grid, IconButton, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Download as DownloadIcon } from '../../../icons/download';
+
 import type { Asset } from '../../../types/job';
+import type { FC } from 'react';
 
 interface CompanyAssetsProps {
   assets: Asset[];

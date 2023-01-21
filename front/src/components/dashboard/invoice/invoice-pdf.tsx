@@ -1,9 +1,10 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
+import { Document, Image, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 import { format } from 'date-fns';
 import numeral from 'numeral';
-import { Document, Image, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
+import PropTypes from 'prop-types';
+
 import type { Invoice } from '../../../types/invoice';
+import type { FC } from 'react';
 
 interface InvoicePDFProps {
   invoice: Invoice;

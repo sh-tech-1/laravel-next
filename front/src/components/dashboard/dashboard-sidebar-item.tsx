@@ -1,11 +1,13 @@
-import type { FC, ReactNode } from 'react';
-import { useState } from 'react';
+import { Box, Button, Collapse, ListItem } from '@mui/material';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import type { ListItemProps } from '@mui/material';
-import { Box, Button, Collapse, ListItem } from '@mui/material';
+import { useState } from 'react';
+
 import { ChevronDown as ChevronDownIcon } from '../../icons/chevron-down';
 import { ChevronRight as ChevronRightIcon } from '../../icons/chevron-right';
+
+import type { ListItemProps } from '@mui/material';
+import type { FC, ReactNode } from 'react';
 
 interface DashboardSidebarItemProps extends ListItemProps {
   active?: boolean;

@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { addDays, addHours, differenceInDays, isAfter } from 'date-fns';
 import {
   Avatar,
   AvatarGroup,
@@ -14,8 +12,12 @@ import {
   ListItemText,
   Tooltip
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
+import { addDays, addHours, differenceInDays, isAfter } from 'date-fns';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 interface Task {
   id: string;

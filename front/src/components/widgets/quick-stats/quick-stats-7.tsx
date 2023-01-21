@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Card,
@@ -8,6 +7,8 @@ import {
   LinearProgress,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const QuickStats7: FC = () => (
   <Box

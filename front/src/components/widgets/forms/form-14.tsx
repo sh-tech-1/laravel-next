@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Box,
   Button,
@@ -16,6 +14,9 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
+import type { FC } from 'react';
 
 const products = [
   {

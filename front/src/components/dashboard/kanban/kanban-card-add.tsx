@@ -1,11 +1,13 @@
-import type { ChangeEvent, FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
 import { Box, Button, Link, OutlinedInput, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { useDispatch } from '../../../store';
 import { createCard } from '../../../thunks/kanban';
+
+import type { ChangeEvent, FC } from 'react';
 
 interface KanbanCardAddProps {
   columnId: string;

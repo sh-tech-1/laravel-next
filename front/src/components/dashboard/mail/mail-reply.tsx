@@ -1,9 +1,10 @@
-import type { ChangeEvent, FC } from 'react';
-import { useRef, useState } from 'react';
-import { Avatar, Box, Button, IconButton, Paper, TextareaAutosize, Tooltip } from '@mui/material';
-import { styled } from '@mui/material/styles';
 import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Avatar, Box, Button, IconButton, Paper, TextareaAutosize, Tooltip } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { useRef, useState } from 'react';
+
+import type { ChangeEvent, FC } from 'react';
 
 const MailReplyTextarea = styled(TextareaAutosize)(
   ({ theme }) => ({

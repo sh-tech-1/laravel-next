@@ -1,12 +1,16 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Avatar, Box, Button, Container, Typography } from '@mui/material';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useEffect } from 'react';
+
+
 import { ContactForm } from '../components/contact/contact-form';
 import { ArrowLeft as ArrowLeftIcon } from '../icons/arrow-left';
 import { Mail as MailIcon } from '../icons/mail';
 import { gtm } from '../lib/gtm';
-import NextLink from 'next/link';
+
+import type { NextPage } from 'next';
+
 
 const Contact: NextPage = () => {
   useEffect(() => {

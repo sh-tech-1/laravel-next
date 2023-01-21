@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Button,
@@ -17,11 +14,16 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+import numeral from 'numeral';
+
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Scrollbar } from '../../scrollbar';
-import type { SeverityPillColor } from '../../severity-pill';
 import { SeverityPill } from '../../severity-pill';
+
+import type { SeverityPillColor } from '../../severity-pill';
+import type { FC } from 'react';
 
 type OrderStatus = 'complete' | 'pending' | 'rejected';
 

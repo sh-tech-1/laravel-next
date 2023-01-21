@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays, subHours } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -17,12 +14,17 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import { format, subDays, subHours } from 'date-fns';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { Search as SearchIcon } from '../../../icons/search';
 import { Scrollbar } from '../../scrollbar';
-import type { SeverityPillColor } from '../../severity-pill';
 import { SeverityPill } from '../../severity-pill';
+
+import type { SeverityPillColor } from '../../severity-pill';
+import type { FC } from 'react';
 
 type InvoiceStatus = 'canceled' | 'paid' | 'pending';
 

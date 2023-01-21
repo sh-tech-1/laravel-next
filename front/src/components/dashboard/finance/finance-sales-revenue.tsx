@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
-import type { CardProps } from '@mui/material';
 import { Card, CardContent, CardHeader, Divider } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
 import { Chart } from '../../chart';
+
+import type { CardProps } from '@mui/material';
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 export const FinanceSalesRevenue: FC<CardProps> = (props) => {
   const theme = useTheme();

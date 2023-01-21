@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Avatar,
   Box,
@@ -15,6 +14,8 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 const members = [
   {

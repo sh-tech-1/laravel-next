@@ -1,7 +1,9 @@
-import type { FC } from 'react';
 import { Box, Button } from '@mui/material';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { Trash as TrashIcon } from '../../../icons/trash';
+
+import type { FC } from 'react';
 
 export const Buttons2: FC = () => (
   <Box

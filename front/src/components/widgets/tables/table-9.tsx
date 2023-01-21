@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { format } from 'date-fns';
 import {
   Box,
   Card,
@@ -13,10 +11,14 @@ import {
   TablePagination,
   TableRow
 } from '@mui/material';
+import { format } from 'date-fns';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 type InvoiceStatus = 'paid';
 

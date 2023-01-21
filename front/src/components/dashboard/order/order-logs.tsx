@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import { format, subHours } from 'date-fns';
-import { Avatar, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
 import {
   Timeline,
   TimelineConnector,
@@ -10,8 +6,14 @@ import {
   TimelineItem,
   TimelineSeparator
 } from '@mui/lab';
+import { Avatar, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
+import { format, subHours } from 'date-fns';
+import PropTypes from 'prop-types';
+
 import { ShoppingCart as ShoppingCartIcon } from '../../../icons/shopping-cart';
+
 import type { Order } from '../../../types/order';
+import type { FC } from 'react';
 
 interface OrderLogsProps {
   order: Order;

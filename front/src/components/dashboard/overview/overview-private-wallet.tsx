@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import { Avatar, Box, Button, Card, CardActions, Divider, Typography } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 export const OverviewPrivateWallet: FC = (props) => {
   const theme = useTheme();

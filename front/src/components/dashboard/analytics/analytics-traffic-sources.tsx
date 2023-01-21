@@ -1,11 +1,13 @@
-import type { ChangeEvent, FC } from 'react';
-import { useState } from 'react';
-import type { ApexOptions } from 'apexcharts';
-import type { CardProps } from '@mui/material';
 import { Box, Card, CardHeader, Checkbox, Divider, Tooltip, Typography } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+import { useState } from 'react';
+
 import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
 import { Chart } from '../../chart';
+
+import type { CardProps } from '@mui/material';
+import type { ApexOptions } from 'apexcharts';
+import type { ChangeEvent, FC } from 'react';
 
 const data = {
   series: [

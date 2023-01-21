@@ -1,7 +1,9 @@
 import { subDays, subHours, subMinutes } from 'date-fns';
-import type { Contact, Message, Participant, Thread } from '../types/chat';
+
 import { createResourceId } from '../utils/create-resource-id';
 import { deepCopy } from '../utils/deep-copy';
+
+import type { Contact, Message, Participant, Thread } from '../types/chat';
 
 const now = new Date();
 
@@ -85,7 +87,7 @@ const contacts: Contact[] = [
   }
 ];
 
-let threads: Thread[] = [
+const threads: Thread[] = [
   {
     id: '5e867eb9de721aecaccf4f7b',
     messages: [
@@ -395,14 +397,14 @@ class ChatApi {
           name: 'Anika Visser'
         };
 
-        let participants: Participant[] = [user];
+        const participants: Participant[] = [user];
 
         // Thread key might be a thread ID
-        let thread = findThreadById(threadKey);
+        const thread = findThreadById(threadKey);
 
         if (thread) {
           contacts.forEach((contact) => {
-            if (thread!.participantIds.includes(contact.id)) {
+            if (thread.participantIds.includes(contact.id)) {
               participants.push({
                 id: contact.id,
                 avatar: contact.avatar,

@@ -1,7 +1,8 @@
-import type { FC } from 'react';
-import { format, subHours, subMinutes, subSeconds } from 'date-fns';
 import { Avatar, Box, Card, CardMedia, Chip, Grid, Link, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { format, subHours, subMinutes, subSeconds } from 'date-fns';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

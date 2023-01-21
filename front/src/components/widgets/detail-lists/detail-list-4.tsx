@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import { format, subDays, subHours, subMinutes } from 'date-fns';
 import {
   Box,
   Button,
@@ -15,7 +12,12 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import { format, subDays, subHours, subMinutes } from 'date-fns';
+import { useState } from 'react';
+
 import { Mail as MailIcon } from '../../../icons/mail';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -10,6 +9,8 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 const paymentMethods = [
   {

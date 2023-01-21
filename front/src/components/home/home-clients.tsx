@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Card, Container, Grid, Link, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const HomeClients: FC = (props) => (
   <Box

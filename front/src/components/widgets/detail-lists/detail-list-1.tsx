@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Badge,
   Box,
@@ -14,7 +12,11 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
+
+import type { FC } from 'react';
 
 const currencies = [
   {

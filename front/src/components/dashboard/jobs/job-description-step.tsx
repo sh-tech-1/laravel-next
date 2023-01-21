@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Box, Button, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { QuillEditor } from '../../quill-editor';
+
+import type { FC } from 'react';
 
 interface JobDescriptionStepProps {
   onBack?: () => void;

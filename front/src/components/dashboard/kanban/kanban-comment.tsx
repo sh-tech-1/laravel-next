@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
 import { Avatar, Box, Paper, Typography } from '@mui/material';
-import type { RootState } from '../../../store';
+import { format } from 'date-fns';
+import PropTypes from 'prop-types';
+
 import { useSelector } from '../../../store';
+
+import type { RootState } from '../../../store';
 import type { Member } from '../../../types/kanban';
+import type { FC } from 'react';
 
 interface KanbanCommentProps {
   createdAt: number;

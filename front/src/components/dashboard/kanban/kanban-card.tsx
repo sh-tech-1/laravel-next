@@ -1,14 +1,18 @@
-import { forwardRef, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Avatar, AvatarGroup, Box, Card, CardMedia, Chip, Typography } from '@mui/material';
-import { Check as CheckIcon } from '../../../icons/check';
+import PropTypes from 'prop-types';
+import { forwardRef, useState } from 'react';
+
 import { ChatAlt as ChatAltIcon } from '../../../icons/chat-alt';
+import { Check as CheckIcon } from '../../../icons/check';
 import { DocumentText as DocumentTextIcon } from '../../../icons/document-text';
 import { Eye as EyeIcon } from '../../../icons/eye';
-import type { RootState } from '../../../store';
 import { useSelector } from '../../../store';
-import type { Card as CardType, Column, Member } from '../../../types/kanban';
+
 import { KanbanCardModal } from './kanban-card-modal';
+
+import type { RootState } from '../../../store';
+import type { Card as CardType, Column, Member } from '../../../types/kanban';
+
 
 interface KanbanCardProps {
   cardId: string;

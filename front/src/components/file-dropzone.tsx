@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import type { DropzoneOptions, FileWithPath } from 'react-dropzone';
-import { useDropzone } from 'react-dropzone';
 import {
   Box,
   Button,
@@ -14,9 +10,15 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useDropzone } from 'react-dropzone';
+
 import { Duplicate as DuplicateIcon } from '../icons/duplicate';
 import { X as XIcon } from '../icons/x';
 import { bytesToSize } from '../utils/bytes-to-size';
+
+import type { FC } from 'react';
+import type { DropzoneOptions, FileWithPath } from 'react-dropzone';
 
 export type File = FileWithPath;
 

@@ -1,11 +1,13 @@
-import type { FC, ReactNode } from 'react';
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { Card, CardHeader, Divider, IconButton, ThemeProvider } from '@mui/material';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+
 import { useSettings } from '../hooks/use-settings';
 import { Moon as MoonIcon } from '../icons/moon';
 import { Sun as SunIcon } from '../icons/sun';
 import { createTheme } from '../theme';
+
+import type { FC, ReactNode } from 'react';
 
 interface DemoPreviewerProps {
   element: ReactNode;
@@ -22,9 +24,7 @@ export const WidgetPreviewer: FC<DemoPreviewerProps> = (props) => {
   }, [settings.theme]);
 
   const handleSwitch = (): void => {
-    setSelectedTheme((prevSelectedTheme) => {
-      return prevSelectedTheme === 'light' ? 'dark' : 'light';
-    });
+    setSelectedTheme((prevSelectedTheme) => prevSelectedTheme === 'light' ? 'dark' : 'light');
   };
 
   const theme = createTheme({

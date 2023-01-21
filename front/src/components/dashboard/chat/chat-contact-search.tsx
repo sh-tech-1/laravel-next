@@ -1,6 +1,3 @@
-import type { ChangeEvent, FocusEvent } from 'react';
-import { forwardRef } from 'react';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -13,9 +10,14 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+import { forwardRef } from 'react';
+
 import { Search as SearchIcon } from '../../../icons/search';
-import type { Contact } from '../../../types/chat';
 import { Tip } from '../../tip';
+
+import type { Contact } from '../../../types/chat';
+import type { ChangeEvent, FocusEvent } from 'react';
 
 interface ChatContactSearchProps {
   isFocused?: boolean;

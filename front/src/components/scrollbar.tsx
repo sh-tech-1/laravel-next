@@ -1,10 +1,11 @@
 import 'simplebar/dist/simplebar.min.css';
-import type { MutableRefObject } from 'react';
+import { styled } from '@mui/material/styles';
 import { forwardRef } from 'react';
 import SimpleBar from 'simplebar-react';
+
 import type { Theme } from '@mui/material';
-import { styled } from '@mui/material/styles';
 import type { SxProps } from '@mui/system';
+import type { MutableRefObject } from 'react';
 
 interface ScrollbarProps extends SimpleBar.Props {
   ref: MutableRefObject<SimpleBar>;
@@ -13,12 +14,10 @@ interface ScrollbarProps extends SimpleBar.Props {
 
 const ScrollbarRoot = styled(SimpleBar)``;
 
-export const Scrollbar = forwardRef<MutableRefObject<SimpleBar>, ScrollbarProps>((props, ref) => {
-  return (
+export const Scrollbar = forwardRef<MutableRefObject<SimpleBar>, ScrollbarProps>((props, ref) => (
     <ScrollbarRoot
       // @ts-ignore
       ref={ref}
       {...props}
     />
-  );
-});
+  ));

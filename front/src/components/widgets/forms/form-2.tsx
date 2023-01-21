@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import { useMemo } from 'react';
 import { Box, Checkbox, Chip, Divider, FormControlLabel, Input } from '@mui/material';
-import { MultiSelect } from '../../multi-select';
+import { useMemo } from 'react';
+
 import { Search as SearchIcon } from '../../../icons/search';
+import { MultiSelect } from '../../multi-select';
+
+import type { FC } from 'react';
 
 const categoryOptions = [
   {

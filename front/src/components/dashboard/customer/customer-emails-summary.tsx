@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import { format } from 'date-fns';
 import {
   Box,
   Button,
@@ -16,10 +13,15 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import { format } from 'date-fns';
+import { useCallback, useEffect, useState } from 'react';
+
 import { customerApi } from '../../../__fake-api__/customer-api';
 import { useMounted } from '../../../hooks/use-mounted';
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
+
 import type { CustomerEmail } from '../../../types/customer';
+import type { FC } from 'react';
 
 const emailOptions = [
   'Resend last invoice',

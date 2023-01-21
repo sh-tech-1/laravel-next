@@ -1,10 +1,14 @@
-import type { FC, ReactNode } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
+
 import { DashboardNavbar } from './dashboard-navbar';
 import { DashboardSidebar } from './dashboard-sidebar';
-import { Box } from '@mui/material';
+
+import type { FC, ReactNode } from 'react';
+
 
 interface DashboardLayoutProps {
   children?: ReactNode;

@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { useRef, useState } from 'react';
 import {
   Box,
   Button,
@@ -18,6 +16,8 @@ import {
   Typography
 } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
+import { useRef, useState } from 'react';
+
 import { Archive as ArchiveIcon } from '../../../icons/archive';
 import { DocumentText as DocumentTextIcon } from '../../../icons/document-text';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
@@ -25,6 +25,8 @@ import { Download as DownloadIcon } from '../../../icons/download';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { Trash as TrashIcon } from '../../../icons/trash';
 import { bytesToSize } from '../../../utils/bytes-to-size';
+
+import type { FC } from 'react';
 
 const files = [
   {

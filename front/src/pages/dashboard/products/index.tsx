@@ -1,20 +1,22 @@
-import { ChangeEvent, MouseEvent, useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
+import { Box, Button, Card, Container, Grid, Typography } from '@mui/material';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { Box, Button, Card, Container, Grid, Typography } from '@mui/material';
-import { productApi } from '../../../__fake-api__/product-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import type { Filters } from '../../../components/dashboard/product/product-list-filters';
-import { ProjectListFilters } from '../../../components/dashboard/product/product-list-filters';
-import { ProductListTable } from '../../../components/dashboard/product/product-list-table';
-import { useMounted } from '../../../hooks/use-mounted';
+import { ChangeEvent, MouseEvent, useCallback, useEffect, useState } from 'react';
+
+import { productApi } from '@/__fake-api__/product-api';
+import { AuthGuard } from '@/components/authentication/auth-guard';
+import { DashboardLayout } from '@/components/dashboard/dashboard-layout';
+import { ProjectListFilters } from '@/components/dashboard/product/product-list-filters';
+import { ProductListTable } from '@/components/dashboard/product/product-list-table';
+import { useMounted } from '@/hooks/use-mounted';
 import { Download as DownloadIcon } from '../../../icons/download';
-import { Upload as UploadIcon } from '../../../icons/upload';
 import { Plus as PlusIcon } from '../../../icons/plus';
-import { gtm } from '../../../lib/gtm';
-import type { Product } from '../../../types/product';
+import { Upload as UploadIcon } from '../../../icons/upload';
+import { gtm } from '@/lib/gtm';
+
+import type { Filters } from '@/components/dashboard/product/product-list-filters';
+import type { Product } from '@/types/product';
+import type { NextPage } from 'next';
 
 const applyFilters = (
   products: Product[],

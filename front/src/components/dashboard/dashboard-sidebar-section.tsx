@@ -1,8 +1,10 @@
-import type { FC, ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import type { ListProps } from '@mui/material';
 import { List, ListSubheader } from '@mui/material';
+import PropTypes from 'prop-types';
+
 import { DashboardSidebarItem } from './dashboard-sidebar-item';
+
+import type { ListProps } from '@mui/material';
+import type { FC, ReactNode } from 'react';
 
 interface Item {
   path?: string;

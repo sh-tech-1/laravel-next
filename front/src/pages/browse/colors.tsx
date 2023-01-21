@@ -1,13 +1,15 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../components/browse-layout';
 import { MainLayout } from '../../components/main-layout';
 import { WidgetPreviewer } from '../../components/widget-previewer';
 import { ColorsMain } from '../../components/widgets/colors/colors-main';
 import { ColorsSeverity } from '../../components/widgets/colors/colors-severity';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const BrowseColors: NextPage = () => {
   useEffect(() => {

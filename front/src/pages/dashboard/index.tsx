@@ -1,6 +1,3 @@
-import { useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import {
   Box,
   Button,
@@ -14,6 +11,9 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { OverviewBanner } from '../../components/dashboard/overview/overview-banner';
@@ -31,6 +31,8 @@ import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../.
 import { Reports as ReportsIcon } from '../../icons/reports';
 import { Users as UsersIcon } from '../../icons/users';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const Overview: NextPage = () => {
   const [displayBanner, setDisplayBanner] = useState<boolean>(true);

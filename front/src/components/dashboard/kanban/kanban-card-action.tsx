@@ -1,7 +1,9 @@
-import type { FC, ReactElement, ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import type { ButtonProps } from '@mui/material';
 import { Button } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import type { ButtonProps } from '@mui/material';
+import type { FC, ReactElement, ReactNode } from 'react';
+
 
 interface KanbanCardActionProps extends ButtonProps {
   icon?: ReactElement;

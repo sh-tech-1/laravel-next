@@ -1,8 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import type { StepIconProps } from '@mui/material';
 import {
   Avatar,
   Box,
@@ -15,12 +10,19 @@ import {
   Stepper,
   Typography
 } from '@mui/material';
+import Head from 'next/head';
+import { useState } from 'react';
+
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { JobCategoryStep } from '../../../components/dashboard/jobs/job-category-step';
-import { JobDetailsStep } from '../../../components/dashboard/jobs/job-details-step';
 import { JobDescriptionStep } from '../../../components/dashboard/jobs/job-description-step';
+import { JobDetailsStep } from '../../../components/dashboard/jobs/job-details-step';
 import { Check as CheckIcon } from '../../../icons/check';
+
+import type { StepIconProps } from '@mui/material';
+import type { NextPage } from 'next';
+import type { FC } from 'react';
 
 const StepIcon: FC<StepIconProps> = (props) => {
   const { active, completed, icon } = props;

@@ -1,7 +1,9 @@
-import type { FC } from 'react';
 import { Avatar, Box, Button, Container, Paper, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
+
 import { Check as CheckIcon } from '../../../icons/check';
+
+import type { FC } from 'react';
 
 export const Modal9: FC = () => (
   <Box

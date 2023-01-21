@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../../components/browse-layout';
 import { MainLayout } from '../../../components/main-layout';
 import { WidgetPreviewer } from '../../../components/widget-previewer';
@@ -14,6 +14,8 @@ import { QuickStats6 } from '../../../components/widgets/quick-stats/quick-stats
 import { QuickStats7 } from '../../../components/widgets/quick-stats/quick-stats-7';
 import { QuickStats8 } from '../../../components/widgets/quick-stats/quick-stats-8';
 import { gtm } from '../../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const BrowseQuickStats: NextPage = () => {
   useEffect(() => {

@@ -1,15 +1,17 @@
-import type { ChangeEvent, ElementType, FC, ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import { Box, Button, IconButton, TextField, Typography } from '@mui/material';
-import ViewConfigIcon from '@mui/icons-material/ViewComfy';
-import ViewWeekIcon from '@mui/icons-material/ViewWeek';
-import ViewDayIcon from '@mui/icons-material/ViewDay';
 import ViewAgendaIcon from '@mui/icons-material/ViewAgenda';
+import ViewConfigIcon from '@mui/icons-material/ViewComfy';
+import ViewDayIcon from '@mui/icons-material/ViewDay';
+import ViewWeekIcon from '@mui/icons-material/ViewWeek';
+import { Box, Button, IconButton, TextField, Typography } from '@mui/material';
+import { format } from 'date-fns';
+import PropTypes from 'prop-types';
+
 import { ChevronLeft as ChevronLeftIcon } from '../../../icons/chevron-left';
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { Plus as PlusIcon } from '../../../icons/plus';
+
 import type { CalendarView } from '../../../types/calendar';
+import type { ChangeEvent, ElementType, FC, ReactNode } from 'react';
 
 interface CalendarToolbarProps {
   children?: ReactNode;

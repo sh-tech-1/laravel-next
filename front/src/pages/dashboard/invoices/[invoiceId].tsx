@@ -1,8 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import NextLink from 'next/link';
-import Head from 'next/head';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import {
   Avatar,
   Box,
@@ -14,7 +10,11 @@ import {
   Link,
   Typography
 } from '@mui/material';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { invoiceApi } from '../../../__fake-api__/invoice-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
@@ -23,8 +23,10 @@ import { InvoicePreview } from '../../../components/dashboard/invoice/invoice-pr
 import { useMounted } from '../../../hooks/use-mounted';
 import { ArrowLeft as ArrowLeftIcon } from '../../../icons/arrow-left';
 import { gtm } from '../../../lib/gtm';
-import type { Invoice } from '../../../types/invoice';
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Invoice } from '../../../types/invoice';
+import type { NextPage } from 'next';
 
 const InvoiceDetails: NextPage = () => {
   const isMounted = useMounted();

@@ -1,5 +1,4 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subHours } from 'date-fns';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import {
   Avatar,
   Box,
@@ -14,9 +13,12 @@ import {
   Typography
 } from '@mui/material';
 import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import { formatDistanceToNowStrict, subHours } from 'date-fns';
+
 import { Clock as ClockIcon } from '../../../icons/clock';
 import { Share as ShareIcon } from '../../../icons/share';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const InputCheckbox: FC = () => (
   <Box

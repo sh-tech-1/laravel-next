@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Box,
   Button,
@@ -12,11 +10,15 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { Image as ImageIcon } from '../../../icons/image';
 import { CircularProgress } from '../../circular-progress';
 import { MoreMenu } from '../../more-menu';
 import { Scrollbar } from '../../scrollbar';
+
+import type { FC } from 'react';
 
 interface Product {
   id: string;

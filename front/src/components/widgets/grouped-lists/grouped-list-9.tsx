@@ -1,6 +1,7 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subHours } from 'date-fns';
 import { Avatar, Box, Card, CardHeader, Link, Rating, Typography } from '@mui/material';
+import { formatDistanceToNowStrict, subHours } from 'date-fns';
+
+import type { FC } from 'react';
 
 const now = new Date();
 

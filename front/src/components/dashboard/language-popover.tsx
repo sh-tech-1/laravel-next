@@ -1,8 +1,9 @@
-import type { FC } from 'react';
+import { Box, ListItemIcon, ListItemText, MenuItem, Popover, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import { toast } from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
-import { Box, ListItemIcon, ListItemText, MenuItem, Popover, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 interface LanguagePopoverProps {
   anchorEl: null | Element;
@@ -41,7 +42,7 @@ export const LanguagePopover: FC<LanguagePopoverProps> = (props) => {
   const handleChange = async (language: Language): Promise<void> => {
     onClose?.();
     await i18n.changeLanguage(language);
-    toast.success(t('Language changed') as string);
+    toast.success(t('Language changed') );
   };
 
   return (

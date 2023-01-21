@@ -1,13 +1,15 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import NextLink from 'next/link';
 import { Box, Card, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../components/browse-layout';
 import { MainLayout } from '../../components/main-layout';
 import { ExternalLink as ExternalLinkIcon } from '../../icons/external-link';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 interface Item {
   image: string;

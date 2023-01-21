@@ -1,8 +1,9 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { formatDistanceToNowStrict } from 'date-fns';
 import { Avatar, Box, Card, CardMedia, Link, Typography } from '@mui/material';
+import { formatDistanceToNowStrict } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
+import type { FC } from 'react';
 
 type AuthorType = 'contact' | 'user';
 

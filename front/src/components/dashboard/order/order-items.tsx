@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -14,8 +11,13 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import type { OrderItem } from '../../../types/order';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+
 import { Scrollbar } from '../../scrollbar';
+
+import type { OrderItem } from '../../../types/order';
+import type { FC } from 'react';
 
 interface OrderItemsProps {
   orderItems: OrderItem[];

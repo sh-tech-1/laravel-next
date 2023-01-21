@@ -1,8 +1,4 @@
-import type { ChangeEvent } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import NextLink from 'next/link';
-import Head from 'next/head';
+import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
 import {
   Avatar,
   Box,
@@ -16,7 +12,10 @@ import {
   Typography
 } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
-import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { socialApi } from '../../../__fake-api__/social-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
@@ -27,7 +26,10 @@ import { Chat as ChatIcon } from '../../../icons/chat';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { UserAdd as UserAddIcon } from '../../../icons/user-add';
 import { gtm } from '../../../lib/gtm';
+
 import type { Profile } from '../../../types/social';
+import type { NextPage } from 'next';
+import type { ChangeEvent } from 'react';
 
 const tabs = [
   { label: 'Timeline', value: 'timeline' },

@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -15,7 +12,12 @@ import {
   Typography
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import numeral from 'numeral';
+
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const data = {
   series: [

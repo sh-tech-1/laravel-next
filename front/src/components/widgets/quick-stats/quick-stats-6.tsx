@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import {
   Avatar,
   Box,
@@ -12,10 +10,14 @@ import {
   Typography
 } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
 import { ChevronUp as ChevronUpIcon } from '../../../icons/chevron-up';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 export const QuickStats6: FC = () => {
   const theme = useTheme();

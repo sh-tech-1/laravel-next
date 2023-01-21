@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -11,6 +10,8 @@ import {
   Grid,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const Form3: FC = () => (
   <Box

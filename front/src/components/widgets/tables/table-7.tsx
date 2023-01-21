@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
 import {
   Box,
   Card,
@@ -12,8 +10,12 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
+import numeral from 'numeral';
+
 import { ExternalLink as ExternalLinkIcon } from '../../../icons/external-link';
 import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+
+import type { FC } from 'react';
 
 interface Page {
   bounceRate: number;

@@ -1,18 +1,20 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
+import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
 import Head from 'next/head';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
+import { useEffect } from 'react';
+
 import { AmplifyLogin } from '../../components/authentication/amplify-login';
+import { AuthBanner } from '../../components/authentication/auth-banner';
 import { Auth0Login } from '../../components/authentication/auth0-login';
 import { FirebaseLogin } from '../../components/authentication/firebase-login';
+import { GuestGuard } from '../../components/authentication/guest-guard';
 import { JWTLogin } from '../../components/authentication/jwt-login';
 import { Logo } from '../../components/logo';
 import { useAuth } from '../../hooks/use-auth';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 type Platform = 'Amplify' | 'Auth0' | 'Firebase' | 'JWT';
 

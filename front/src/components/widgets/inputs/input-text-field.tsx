@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Grid, TextField } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const InputTextField: FC = () => (
   <Box

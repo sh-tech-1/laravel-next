@@ -1,7 +1,9 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import type { ListItemProps } from '@mui/material';
 import { Box, ListItem, ListItemText, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import type { ListItemProps } from '@mui/material';
+import type { FC } from 'react';
+
 
 type Direction = 'horizontal' | 'vertical';
 

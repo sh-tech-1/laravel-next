@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
-import type { ApexOptions } from 'apexcharts';
 import { Box, Card, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import numeral from 'numeral';
+
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const ChartLine: FC = () => {
   const theme = useTheme();

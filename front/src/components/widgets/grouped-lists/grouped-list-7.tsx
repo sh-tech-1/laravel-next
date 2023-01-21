@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
 import {
   Avatar,
   Badge,
@@ -14,6 +12,9 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
+import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+
+import type { FC } from 'react';
 
 const messages = [
   {

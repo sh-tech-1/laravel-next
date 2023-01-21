@@ -1,12 +1,14 @@
-import type { FC } from 'react';
-import Markdown from 'react-markdown';
-import type { CodeComponent, Components } from 'react-markdown/lib/ast-to-react';
-import PropTypes from 'prop-types';
-// @ts-ignore
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// @ts-ignore
-import dracula from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import Markdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import dracula from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
+
+import type { FC } from 'react';
+import type { CodeComponent, Components } from 'react-markdown/lib/ast-to-react';
+
+// @ts-ignore
+// @ts-ignore
 
 // NOTE: To reduce the bundle size, we did not include react-syntax-highlighter types package.
 

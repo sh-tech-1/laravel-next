@@ -1,8 +1,4 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
-import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
+import LogoutIcon from '@mui/icons-material/Logout';
 import {
   Avatar,
   Box,
@@ -13,11 +9,17 @@ import {
   Popover,
   Typography
 } from '@mui/material';
-import LogoutIcon from '@mui/icons-material/Logout';
+import NextLink from 'next/link';
+import { useRouter } from 'next/router';
+import PropTypes from 'prop-types';
+import toast from 'react-hot-toast';
+
 import { useAuth } from '../../hooks/use-auth';
 import { Cog as CogIcon } from '../../icons/cog';
-import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
 import { SwitchHorizontalOutlined as SwitchHorizontalOutlinedIcon } from '../../icons/switch-horizontal-outlined';
+import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
+
+import type { FC } from 'react';
 
 interface AccountPopoverProps {
   anchorEl: null | Element;

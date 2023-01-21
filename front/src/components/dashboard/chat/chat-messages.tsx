@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
-import type { Message, Participant } from '../../../types/chat';
+import PropTypes from 'prop-types';
+
 import { ChatMessage } from './chat-message';
+
+import type { Message, Participant } from '../../../types/chat';
+import type { FC } from 'react';
 
 interface ChatMessagesProps {
   messages: Message[];

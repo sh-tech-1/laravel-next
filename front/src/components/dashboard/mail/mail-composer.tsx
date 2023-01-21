@@ -1,6 +1,6 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
+import MinimizeIcon from '@mui/icons-material/Minimize';
 import {
   Backdrop,
   Box,
@@ -13,12 +13,14 @@ import {
   Typography
 } from '@mui/material';
 import Portal from '@mui/material/Portal';
-import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
-import MinimizeIcon from '@mui/icons-material/Minimize';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { ArrowsExpand as ArrowsExpandIcon } from '../../../icons/arrows-expand';
 import { X as XIcon } from '../../../icons/x';
 import { QuillEditor } from '../../quill-editor';
+
+import type { FC } from 'react';
 
 interface MailComposerProps {
   open?: boolean;

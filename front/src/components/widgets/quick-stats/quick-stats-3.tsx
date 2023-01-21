@@ -1,6 +1,8 @@
-import type { FC } from 'react';
 import { Box, Card, Grid, Typography } from '@mui/material';
+
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 export const QuickStats3: FC = () => (
   <Box

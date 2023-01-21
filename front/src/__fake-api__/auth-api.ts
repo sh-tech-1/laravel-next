@@ -1,7 +1,8 @@
-import type { User } from '../types/user';
 import { createResourceId } from '../utils/create-resource-id';
 import { decode, JWT_EXPIRES_IN, JWT_SECRET, sign } from '../utils/jwt';
 import { wait } from '../utils/wait';
+
+import type { User } from '../types/user';
 
 const users: User[] = [
   {
@@ -116,7 +117,7 @@ class AuthApi {
     return new Promise((resolve, reject) => {
       try {
         // Decode access token
-        const { userId } = decode(accessToken) as any;
+        const { userId } = decode(accessToken) ;
 
         // Find the user
         const user = users.find((_user) => _user.id === userId);

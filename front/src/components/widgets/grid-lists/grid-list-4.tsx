@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Avatar,
   Box,
@@ -11,6 +10,8 @@ import {
   Link,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 const applicants = [
   {

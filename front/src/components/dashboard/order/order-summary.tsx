@@ -1,8 +1,3 @@
-import type { ChangeEvent, FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import type { Theme } from '@mui/material';
 import {
   Box,
   Button,
@@ -13,9 +8,17 @@ import {
   Typography,
   useMediaQuery
 } from '@mui/material';
-import type { Order } from '../../../types/order';
+import { format } from 'date-fns';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
+
 import { PropertyList } from '../../property-list';
 import { PropertyListItem } from '../../property-list-item';
+
+import type { Order } from '../../../types/order';
+import type { Theme } from '@mui/material';
+import type { ChangeEvent, FC } from 'react';
 
 interface OrderDetailsProps {
   order: Order;

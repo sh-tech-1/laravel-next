@@ -1,6 +1,3 @@
-import type { FC, ReactNode } from 'react';
-import { createContext, useEffect, useReducer } from 'react';
-import PropTypes from 'prop-types';
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -10,8 +7,13 @@ import {
   signInWithPopup,
   signOut
 } from 'firebase/auth';
+import PropTypes from 'prop-types';
+import { createContext, useEffect, useReducer } from 'react';
+
 import { firebaseApp } from '../lib/firebase';
+
 import type { User } from '../types/user';
+import type { FC, ReactNode } from 'react';
 
 const auth = getAuth(firebaseApp);
 

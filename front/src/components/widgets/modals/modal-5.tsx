@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { subDays, subHours } from 'date-fns';
 import {
   Avatar,
   Box,
@@ -13,9 +11,13 @@ import {
   SvgIcon,
   Typography
 } from '@mui/material';
+import { subDays, subHours } from 'date-fns';
+
 import { ChatAlt as ChatAltIcon } from '../../../icons/chat-alt';
 import { CreditCard as CreditCardIcon } from '../../../icons/credit-card';
 import { ShoppingCart as ShoppingCartIcon } from '../../../icons/shopping-cart';
+
+import type { FC } from 'react';
 
 type NotificationType = 'item_shipped' | 'new_message' | 'order_placed';
 

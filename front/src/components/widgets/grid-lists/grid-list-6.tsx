@@ -1,6 +1,8 @@
-import type { FC } from 'react';
 import { Avatar, Box, Button, Grid, IconButton, Link, Paper, Typography } from '@mui/material';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+
+import type { FC } from 'react';
 
 const connections = [
   {

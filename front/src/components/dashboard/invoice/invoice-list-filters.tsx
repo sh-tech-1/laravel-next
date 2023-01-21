@@ -1,7 +1,3 @@
-import type { ChangeEvent, FC, FormEvent, MutableRefObject } from 'react';
-import { useRef } from 'react';
-import PropTypes from 'prop-types';
-import type { Theme } from '@mui/material';
 import {
   Box,
   Checkbox,
@@ -18,10 +14,16 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import PropTypes from 'prop-types';
+import { useRef } from 'react';
+
 import { Search as SearchIcon } from '../../../icons/search';
 import { X } from '../../../icons/x';
-import { Scrollbar } from '../../scrollbar';
 import { InvoiceStatus } from '../../../types/invoice';
+import { Scrollbar } from '../../scrollbar';
+
+import type { Theme } from '@mui/material';
+import type { ChangeEvent, FC, FormEvent, MutableRefObject } from 'react';
 
 export interface Filters {
   query?: string;

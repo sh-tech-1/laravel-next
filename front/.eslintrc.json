@@ -1,29 +1,25 @@
 {
   "extends": [
       "next/core-web-vitals",
-      "plugin:import/recommended",
-      "plugin:import/warnings",
-      "airbnb",
-      "airbnb-typescript",
       "plugin:@typescript-eslint/recommended", //型を必要としないプラグインの推奨ルールをすべて有効
       "plugin:@typescript-eslint/recommended-requiring-type-checking", //型を必要とするプラグインの推奨ルールをすべて有効
+      "plugin:react/recommended",
       "prettier" //ESLintの情報に沿ってフォーマット
   ],
   "plugins": [
       "react",
       "@typescript-eslint",
+      "import",
       "unused-imports"
   ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
   "rules": {
-      "no-use-before-define": "off", //関数や変数が定義される前に使われているとエラーになるデフォルトの機能をoff
-      "@typescript-eslint/no-use-before-define": ["error"], //typescript側のno-use-before-defineを使うようにする
-      "import/prefer-default-export": "off", //named exportがエラーになるので使えるようにoff
       "@typescript-eslint/no-unused-vars": "off", //unused-importsを使うため削除
       "unused-imports/no-unused-imports": "error", //不要なimportの削除
-      "unused-imports/no-unused-vars": [ //unused-importsでno-unused-varsのルールを再定義
-          "warn",
-          { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
-      ],
       "react/function-component-definition": [//アロー関数以外受け付けない設定
           2,
           {
@@ -54,33 +50,19 @@
           {
               "allowAsStatement": true
           }
+      ],
+      "import/order": [
+          "warn",
+          {
+              "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+              "newlines-between": "always",
+              "pathGroupsExcludedImportTypes": ["builtin"],
+              "alphabetize": { "order": "asc", "caseInsensitive": true },
+              "pathGroups": [
+//                  { "pattern": "src/types/**", "group": "internal", "position": "before" },
+//                  { "pattern": "src/repositories/**", "group": "internal", "position": "before" }
+              ]
+          }
       ]
-  },
-    "settings": {
-        "import/resolver": { //importするファイルをjsだけではなく、tsを含むファイルを許可する
-            "node": {
-                "paths": ["src"],
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
-            }
-        }
-    },
-    "@next/next/no-img-element": "off",
-    "jsx-a11y/alt-text": "off",
-    "react/display-name": "off",
-    "react/no-children-prop": "off",
-    "react/jsx-max-props-per-line": [
-      1,
-      {
-        "maximum": 1
-      }
-    ],
-    "import/order": [
-        "error",
-        {
-            "alphabetize": {
-                "order": "asc"
-            }
-        }
-    ]
-
+  }
 }

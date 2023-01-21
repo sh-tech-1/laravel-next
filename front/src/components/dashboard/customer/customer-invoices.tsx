@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import NextLink from 'next/link';
-import { format } from 'date-fns';
 import {
   Card,
   CardHeader,
@@ -14,13 +10,19 @@ import {
   TablePagination,
   TableRow
 } from '@mui/material';
+import { format } from 'date-fns';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+
 import { customerApi } from '../../../__fake-api__/customer-api';
 import { useMounted } from '../../../hooks/use-mounted';
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import type { CustomerInvoice } from '../../../types/customer';
 import { MoreMenu } from '../../more-menu';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { CustomerInvoice } from '../../../types/customer';
+import type { FC } from 'react';
 
 export const CustomerInvoices: FC = (props) => {
   const isMounted = useMounted();

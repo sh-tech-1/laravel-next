@@ -1,15 +1,18 @@
-import type { ChangeEvent, FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
-import type { Theme } from '@mui/material';
 import { Box, Button, Checkbox, IconButton, Input, OutlinedInput } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import type { SxProps } from '@mui/system';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+
+
 import { Trash as TrashIcon } from '../../../icons/trash';
 import { useDispatch } from '../../../store';
 import { deleteCheckItem, updateCheckItem } from '../../../thunks/kanban';
+
 import type { CheckItem } from '../../../types/kanban';
+import type { Theme } from '@mui/material';
+import type { SxProps } from '@mui/system';
+import type { ChangeEvent, FC } from 'react';
 
 interface KanbanCheckItemProps {
   cardId: string;

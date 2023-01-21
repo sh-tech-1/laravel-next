@@ -1,20 +1,22 @@
-import { useEffect, useRef, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import type { Theme } from '@mui/material';
 import { Avatar, Box, IconButton, Typography, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect, useRef, useState } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { ChatComposer } from '../../components/dashboard/chat/chat-composer';
 import { ChatSidebar } from '../../components/dashboard/chat/chat-sidebar';
 import { ChatThread } from '../../components/dashboard/chat/chat-thread';
+import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { ChatAlt2 as ChatAlt2Icon } from '../../icons/chat-alt2';
 import { MenuAlt4 as MenuAlt4Icon } from '../../icons/menu-alt-4';
 import { gtm } from '../../lib/gtm';
 import { useDispatch } from '../../store';
 import { getThreads } from '../../thunks/chat';
+
+import type { Theme } from '@mui/material';
+import type { NextPage } from 'next';
 
 const ChatInner = styled(
   'div',

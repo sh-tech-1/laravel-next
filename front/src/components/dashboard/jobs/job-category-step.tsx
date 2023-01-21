@@ -1,9 +1,11 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Box, Button, Card, Radio, Typography } from '@mui/material';
 import { alpha } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
+
+import type { FC } from 'react';
 
 interface JobCategoryStepProps {
   onNext?: () => void;

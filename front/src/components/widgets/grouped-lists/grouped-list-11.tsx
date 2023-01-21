@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Button,
@@ -11,8 +10,11 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import type { SeverityPillColor } from '../../severity-pill';
+
 import { SeverityPill } from '../../severity-pill';
+
+import type { SeverityPillColor } from '../../severity-pill';
+import type { FC } from 'react';
 
 type CampaignStatus = 'draft' | 'active' | 'stopped';
 

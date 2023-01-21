@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { format, subDays, subMinutes, subSeconds } from 'date-fns';
 import {
   Box,
   Card,
@@ -12,9 +10,13 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format, subDays, subMinutes, subSeconds } from 'date-fns';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { FC } from 'react';
 
 interface Log {
   id: string;

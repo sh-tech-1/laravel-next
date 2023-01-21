@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import SendIcon from '@mui/icons-material/Send';
 import {
   Box,
   Card,
@@ -12,10 +12,12 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
+
+import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
 import { CreditCard as CreditCardIcon } from '../../../icons/credit-card';
 import { Mail as MailIcon } from '../../../icons/mail';
-import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
+
+import type { FC } from 'react';
 
 type NotificationType = 'message' | 'invite' | 'payout';
 

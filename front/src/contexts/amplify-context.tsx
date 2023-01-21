@@ -1,9 +1,11 @@
-import type { FC, ReactNode } from 'react';
-import { createContext, useEffect, useReducer } from 'react';
-import PropTypes from 'prop-types';
 import Auth from '@aws-amplify/auth';
+import PropTypes from 'prop-types';
+import { createContext, useEffect, useReducer } from 'react';
+
 import { amplifyConfig } from '../config';
+
 import type { User } from '../types/user';
+import type { FC, ReactNode } from 'react';
 
 Auth.configure({
   userPoolId: amplifyConfig.aws_user_pools_id,

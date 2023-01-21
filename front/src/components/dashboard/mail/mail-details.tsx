@@ -1,9 +1,5 @@
-import type { FC } from 'react';
-import { useEffect } from 'react';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import Markdown from 'react-markdown';
+import ReplyIcon from '@mui/icons-material/Reply';
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 import {
   Avatar,
   Box,
@@ -17,8 +13,12 @@ import {
   Typography
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import ReplyAllIcon from '@mui/icons-material/ReplyAll';
-import ReplyIcon from '@mui/icons-material/Reply';
+import { format } from 'date-fns';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import Markdown from 'react-markdown';
+
 import { ArrowLeft as ArrowLeftIcon } from '../../../icons/arrow-left';
 import { ChevronLeft as ChevronLeftIcon } from '../../../icons/chevron-left';
 import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
@@ -29,7 +29,10 @@ import { Trash as TrashIcon } from '../../../icons/trash';
 import { useDispatch, useSelector } from '../../../store';
 import { getEmail } from '../../../thunks/mail';
 import { getInitials } from '../../../utils/get-initials';
+
 import { MailReply } from './mail-reply';
+
+import type { FC } from 'react';
 
 interface MailDetailsProps {
   emailId: string;

@@ -1,12 +1,15 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { Box, Divider } from '@mui/material';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+
 import { useDispatch } from '../../../store';
 import { addMessage } from '../../../thunks/chat';
-import type { Contact } from '../../../types/chat';
+
 import { ChatComposerToolbar } from './chat-composer-toolbar';
 import { ChatMessageAdd } from './chat-message-add';
+
+import type { Contact } from '../../../types/chat';
+import type { FC } from 'react';
 
 interface ChatComposerProps {}
 

@@ -1,14 +1,16 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
+import { Box, Card, Container, Typography } from '@mui/material';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { Box, Card, Container, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
+import { useEffect } from 'react';
+
 import { AmplifyPasswordRecovery } from '../../components/authentication/amplify-password-recovery';
+import { AuthBanner } from '../../components/authentication/auth-banner';
+import { GuestGuard } from '../../components/authentication/guest-guard';
 import { Logo } from '../../components/logo';
 import { useAuth } from '../../hooks/use-auth';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 type Platform = 'Amplify' | 'Auth0' | 'Firebase' | 'JWT';
 

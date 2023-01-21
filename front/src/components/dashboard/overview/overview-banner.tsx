@@ -1,6 +1,7 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { Box, Button, Card, Chip, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import type { FC } from 'react';
 
 interface OverviewBannerProps {
   onDismiss?: () => void;

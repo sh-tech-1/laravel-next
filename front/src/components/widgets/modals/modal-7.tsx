@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { Box, Button, FormControlLabel, Paper, Switch, TextField, Typography } from '@mui/material';
+
+import type { FC } from 'react';
 
 export const Modal7: FC = () => (
   <Box

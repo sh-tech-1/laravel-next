@@ -1,9 +1,3 @@
-import type { ChangeEvent, FC, MouseEvent } from 'react';
-import { Fragment } from 'react';
-import NextLink from 'next/link';
-import { format } from 'date-fns';
-import numeral from 'numeral';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -15,10 +9,18 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format } from 'date-fns';
+import NextLink from 'next/link';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+import { Fragment } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import type { Invoice, InvoiceStatus } from '../../../types/invoice';
 import { getInitials } from '../../../utils/get-initials';
 import { Scrollbar } from '../../scrollbar';
+
+import type { Invoice, InvoiceStatus } from '../../../types/invoice';
+import type { ChangeEvent, FC, MouseEvent } from 'react';
 
 interface InvoiceListTableProps {
   group?: boolean;

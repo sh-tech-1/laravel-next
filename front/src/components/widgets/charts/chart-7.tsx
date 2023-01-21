@@ -1,10 +1,12 @@
-import type { ChangeEvent, FC } from 'react';
-import { useState } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import { Box, Card, CardContent, CardHeader, Checkbox, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useState } from 'react';
+
 import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
 import { Chart } from '../../chart';
+
+import type { ApexOptions } from 'apexcharts';
+import type { ChangeEvent, FC } from 'react';
 
 const data = {
   series: [

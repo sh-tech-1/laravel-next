@@ -1,19 +1,21 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import NextLink from 'next/link';
-import { format, subHours } from 'date-fns';
-import Markdown from 'react-markdown';
 import { Avatar, Box, Button, Card, Chip, Container, Divider, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { format, subHours } from 'date-fns';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
+import Markdown from 'react-markdown';
+
 import { blogApi } from '../../__fake-api__/blog-api';
-import { BlogNewsletter } from '../../components/blog/blog-newsletter';
 import { BlogComment } from '../../components/blog/blog-comment';
 import { BlogCommentAdd } from '../../components/blog/blog-comment-add';
-import { ArrowLeft as ArrowLeftIcon } from '../../icons/arrow-left';
+import { BlogNewsletter } from '../../components/blog/blog-newsletter';
 import { useMounted } from '../../hooks/use-mounted';
+import { ArrowLeft as ArrowLeftIcon } from '../../icons/arrow-left';
 import { gtm } from '../../lib/gtm';
+
 import type { Post } from '../../types/blog';
+import type { NextPage } from 'next';
 
 interface Comment {
   id: string;

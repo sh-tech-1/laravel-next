@@ -1,17 +1,19 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
+import { LogisticsOnRouteVehicles } from '../../components/dashboard/logistics/logistics-on-route-vehicles';
 import { LogisticsOverview } from '../../components/dashboard/logistics/logistics-overview';
 import { LogisticsTotalVehicles } from '../../components/dashboard/logistics/logistics-total-vehicles';
 import { LogisticsVehiclesCondition } from '../../components/dashboard/logistics/logistics-vehicles-condition';
-import { LogisticsOnRouteVehicles } from '../../components/dashboard/logistics/logistics-on-route-vehicles';
 import { Cog as CogIcon } from '../../icons/cog';
 import { Download as DownloadIcon } from '../../icons/download';
 import { Reports as ReportsIcon } from '../../icons/reports';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const Logistics: NextPage = () => {
   useEffect(() => {

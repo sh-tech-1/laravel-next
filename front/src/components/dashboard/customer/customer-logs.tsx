@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import { format } from 'date-fns';
 import {
   Card,
   CardHeader,
@@ -11,12 +8,17 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format } from 'date-fns';
+import { useCallback, useEffect, useState } from 'react';
+
 import { customerApi } from '../../../__fake-api__/customer-api';
 import { useMounted } from '../../../hooks/use-mounted';
-import type { CustomerLog } from '../../../types/customer';
 import { MoreMenu } from '../../more-menu';
 import { Scrollbar } from '../../scrollbar';
 import { SeverityPill } from '../../severity-pill';
+
+import type { CustomerLog } from '../../../types/customer';
+import type { FC } from 'react';
 
 export const CustomerLogs: FC = (props) => {
   const isMounted = useMounted();

@@ -1,7 +1,10 @@
-import type { FC } from 'react';
-import { Box } from '@mui/material';
-import { Logo } from './logo';
 import { keyframes } from '@emotion/react';
+import { Box } from '@mui/material';
+
+import { Logo } from './logo';
+
+import type { FC } from 'react';
+
 
 const bounce1 = keyframes`
   0% {

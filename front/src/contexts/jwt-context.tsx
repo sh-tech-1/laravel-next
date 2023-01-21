@@ -1,8 +1,10 @@
-import type { FC, ReactNode } from 'react';
-import { createContext, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
+import { createContext, useEffect, useReducer } from 'react';
+
 import { authApi } from '../__fake-api__/auth-api';
+
 import type { User } from '../types/user';
+import type { FC, ReactNode } from 'react';
 
 interface State {
   isInitialized: boolean;

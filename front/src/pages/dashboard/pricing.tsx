@@ -1,12 +1,14 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Badge, Box, Container, Divider, Grid, Switch, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { PricingPlan } from '../../components/pricing/pricing-plan';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const Pricing: NextPage = () => {
   const theme = useTheme();

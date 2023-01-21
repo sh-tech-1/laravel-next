@@ -1,7 +1,3 @@
-import type { ChangeEvent, FC, MouseEvent } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Table,
@@ -11,9 +7,15 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format } from 'date-fns';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+
+import { SeverityPill } from '../../severity-pill';
+
 import type { Order } from '../../../types/order';
 import type { SeverityPillColor } from '../../severity-pill';
-import { SeverityPill } from '../../severity-pill';
+import type { ChangeEvent, FC, MouseEvent } from 'react';
 
 interface OrderListTableProps {
   onOpenDrawer?: (orderId: string) => void;

@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react';
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import type { Theme } from '@mui/material';
 import { Box, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect, useRef } from 'react';
+
 import { AuthGuard } from '../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
 import { MailComposer } from '../../components/dashboard/mail/mail-composer';
@@ -20,6 +19,9 @@ import {
   openComposer,
   openSidebar
 } from '../../thunks/mail';
+
+import type { Theme } from '@mui/material';
+import type { NextPage } from 'next';
 
 const MailInner = styled(
   'div',

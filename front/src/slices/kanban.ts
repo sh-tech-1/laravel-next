@@ -1,7 +1,9 @@
-import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
-import type { Board, Card, CheckItem, Checklist, Column, Comment, Member } from '../types/kanban';
+
 import { objFromArray } from '../utils/obj-from-array';
+
+import type { Board, Card, CheckItem, Checklist, Column, Comment, Member } from '../types/kanban';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 interface KanbanState {
   isLoaded: boolean;

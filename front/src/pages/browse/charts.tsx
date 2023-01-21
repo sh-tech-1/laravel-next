@@ -1,11 +1,14 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../components/browse-layout';
 import { MainLayout } from '../../components/main-layout';
 import { WidgetPreviewer } from '../../components/widget-previewer';
 import { Chart1 } from '../../components/widgets/charts/chart-1';
+import { Chart10 } from '../../components/widgets/charts/chart-10';
+import { Chart11 } from '../../components/widgets/charts/chart-11';
+import { Chart12 } from '../../components/widgets/charts/chart-12';
 import { Chart2 } from '../../components/widgets/charts/chart-2';
 import { Chart3 } from '../../components/widgets/charts/chart-3';
 import { Chart4 } from '../../components/widgets/charts/chart-4';
@@ -14,10 +17,9 @@ import { Chart6 } from '../../components/widgets/charts/chart-6';
 import { Chart7 } from '../../components/widgets/charts/chart-7';
 import { Chart8 } from '../../components/widgets/charts/chart-8';
 import { Chart9 } from '../../components/widgets/charts/chart-9';
-import { Chart10 } from '../../components/widgets/charts/chart-10';
-import { Chart11 } from '../../components/widgets/charts/chart-11';
-import { Chart12 } from '../../components/widgets/charts/chart-12';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 const BrowseCharts: NextPage = () => {
   useEffect(() => {

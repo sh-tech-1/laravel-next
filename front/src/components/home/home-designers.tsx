@@ -1,7 +1,9 @@
-import type { FC } from 'react';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
 import { ExternalLink as ExternalLinkIcon } from '../../icons/external-link';
+
+import type { FC } from 'react';
 
 export const HomeDesigners: FC = (props) => {
   const theme = useTheme();

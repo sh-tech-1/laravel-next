@@ -1,10 +1,12 @@
-import type { FC } from 'react';
-import type { ApexOptions } from 'apexcharts';
 import { Box, Card, CardHeader, IconButton } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
+
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { Chart } from '../../chart';
 import { Scrollbar } from '../../scrollbar';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 const data = {
   series: [

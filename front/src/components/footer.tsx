@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Container,
@@ -12,8 +11,12 @@ import {
   Typography
 } from '@mui/material';
 import { alpha } from '@mui/material/styles';
+
 import { MinusOutlined as MinusOutlinedIcon } from '../icons/minus-outlined';
+
 import { Logo } from './logo';
+
+import type { FC } from 'react';
 
 const sections = [
   {

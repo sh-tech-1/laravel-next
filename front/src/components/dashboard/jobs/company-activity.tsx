@@ -1,8 +1,3 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import { Avatar, Box, Button, Link, Typography } from '@mui/material';
 import {
   Timeline,
   TimelineConnector,
@@ -11,8 +6,15 @@ import {
   TimelineItem,
   TimelineSeparator
 } from '@mui/lab';
-import type { Activity } from '../../../types/job';
+import { Avatar, Box, Button, Link, Typography } from '@mui/material';
+import { format } from 'date-fns';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+
 import { getInitials } from '../../../utils/get-initials';
+
+import type { Activity } from '../../../types/job';
+import type { FC } from 'react';
 
 interface CompanyActivityProps {
   activities: Activity[];

@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import { MenuItem, Popover } from '@mui/material';
+
+import type { FC } from 'react';
 
 interface OrganizationPopoverProps {
   anchorEl: null | Element;

@@ -1,10 +1,13 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
-import type { ApexOptions } from 'apexcharts';
 import { Box, Card, CardContent, CardHeader, Divider } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import numeral from 'numeral';
+
 import { Chart } from '../../chart';
+
 import { WorldMap } from './world-map';
+
+import type { ApexOptions } from 'apexcharts';
+import type { FC } from 'react';
 
 export const FinanceSalesByContinent: FC = (props) => {
   const theme = useTheme();

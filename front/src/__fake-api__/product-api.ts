@@ -1,4 +1,5 @@
 import { subDays, subHours } from 'date-fns';
+
 import type { Product } from '../types/product';
 
 const now = new Date();

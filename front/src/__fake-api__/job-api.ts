@@ -1,4 +1,5 @@
 import { subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+
 import type { Company } from '../types/job';
 
 const now = new Date();

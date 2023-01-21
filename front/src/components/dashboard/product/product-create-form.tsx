@@ -1,9 +1,3 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import toast from 'react-hot-toast';
-import * as Yup from 'yup';
-import { useFormik } from 'formik';
 import {
   Box,
   Button,
@@ -17,9 +11,17 @@ import {
   TextField,
   Typography
 } from '@mui/material';
-import type { File } from '../../file-dropzone';
+import { useFormik } from 'formik';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+import * as Yup from 'yup';
+
 import { FileDropzone } from '../../file-dropzone';
 import { QuillEditor } from '../../quill-editor';
+
+import type { File } from '../../file-dropzone';
+import type { FC } from 'react';
 
 const categoryOptions = [
   {

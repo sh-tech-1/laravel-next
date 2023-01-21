@@ -1,8 +1,3 @@
-import type { ChangeEvent, FC, MouseEvent } from 'react';
-import { useEffect, useState } from 'react';
-import NextLink from 'next/link';
-import numeral from 'numeral';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -18,11 +13,18 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import NextLink from 'next/link';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import type { Customer } from '../../../types/customer';
 import { getInitials } from '../../../utils/get-initials';
 import { Scrollbar } from '../../scrollbar';
+
+import type { Customer } from '../../../types/customer';
+import type { ChangeEvent, FC, MouseEvent } from 'react';
 
 interface CustomerListTableProps {
   customers: Customer[];

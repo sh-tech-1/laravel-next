@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Avatar,
   Box,
@@ -11,7 +10,10 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+
 import { UserCircle as UserCircleIcon } from '../../../icons/user-circle';
+
+import type { FC } from 'react';
 
 export const AccountGeneralSettings: FC = (props) => {
   // To get the user from the authContext, you can use

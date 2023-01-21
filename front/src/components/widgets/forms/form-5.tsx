@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Autocomplete,
   Box,
@@ -12,6 +11,8 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+
+import type { FC } from 'react';
 
 type Option = {
   text: string;

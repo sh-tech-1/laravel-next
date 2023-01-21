@@ -1,9 +1,11 @@
-import type { FC } from 'react';
+import { Avatar, Box, Card, CardContent, CardMedia, Chip, Link, Typography } from '@mui/material';
+import { format } from 'date-fns';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import { Avatar, Box, Card, CardContent, CardMedia, Chip, Link, Typography } from '@mui/material';
+
 import { getInitials } from '../../utils/get-initials';
+
+import type { FC } from 'react';
 
 interface BlogPostCardProps {
   authorAvatar: string;

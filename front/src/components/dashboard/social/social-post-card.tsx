@@ -1,8 +1,5 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import NextLink from 'next/link';
-import PropTypes from 'prop-types';
-import { formatDistanceToNowStrict } from 'date-fns';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import {
   Avatar,
   Box,
@@ -16,13 +13,19 @@ import {
   Tooltip,
   Typography
 } from '@mui/material';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { formatDistanceToNowStrict } from 'date-fns';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
 import { Clock as ClockIcon } from '../../../icons/clock';
 import { Share as ShareIcon } from '../../../icons/share';
-import type { Comment } from '../../../types/social';
+
 import { SocialComment } from './social-comment';
 import { SocialCommentAdd } from './social-comment-add';
+
+import type { Comment } from '../../../types/social';
+import type { FC } from 'react';
 
 interface SocialPostCardProps {
   authorAvatar: string;

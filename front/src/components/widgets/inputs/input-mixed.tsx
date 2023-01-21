@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import {
   Box,
   Checkbox,
@@ -11,6 +10,8 @@ import {
   Typography
 } from '@mui/material';
 import { DateTimePicker } from '@mui/x-date-pickers';
+
+import type { FC } from 'react';
 
 export const InputMixed: FC = () => (
   <Box

@@ -24,7 +24,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    //FIX FUTURE
+    "noImplicitAny": false
   },
   "include": [
     "./src"

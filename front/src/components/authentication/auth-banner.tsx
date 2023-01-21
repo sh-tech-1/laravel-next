@@ -1,6 +1,7 @@
-import type { FC } from 'react';
-import NextLink from 'next/link';
 import { Box, Chip, Container, Link, Tooltip, Typography } from '@mui/material';
+import NextLink from 'next/link';
+
+import type { FC } from 'react';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',

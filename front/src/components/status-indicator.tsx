@@ -1,6 +1,7 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+
+import type { FC } from 'react';
 
 type Size = 'small' | 'medium' | 'large';
 

@@ -1,7 +1,3 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import numeral from 'numeral';
 import {
   Box,
   Grid,
@@ -13,9 +9,15 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import type { Invoice } from '../../../types/invoice';
+import { format } from 'date-fns';
+import numeral from 'numeral';
+import PropTypes from 'prop-types';
+
 import { Logo } from '../../logo';
 import { Scrollbar } from '../../scrollbar';
+
+import type { Invoice } from '../../../types/invoice';
+import type { FC } from 'react';
 
 interface InvoicePreviewProps {
   invoice: Invoice;

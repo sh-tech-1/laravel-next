@@ -1,6 +1,3 @@
-import type { FC, SyntheticEvent } from 'react';
-import { Fragment, useState } from 'react';
-import PropTypes from 'prop-types';
 import {
   Badge,
   Box,
@@ -13,10 +10,15 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+import { Fragment, useState } from 'react';
+
 import { Search as SearchIcon } from '../../icons/search';
-import { wait } from '../../utils/wait';
 import { X as XIcon } from '../../icons/x';
+import { wait } from '../../utils/wait';
 import { Tip } from '../tip';
+
+import type { FC, SyntheticEvent } from 'react';
 
 interface ContentSearchProps {
   onClose?: () => void;

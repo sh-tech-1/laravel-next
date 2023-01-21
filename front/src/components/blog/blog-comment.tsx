@@ -1,7 +1,8 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import { formatDistanceToNow } from 'date-fns';
 import { Avatar, Box, Typography } from '@mui/material';
+import { formatDistanceToNow } from 'date-fns';
+import PropTypes from 'prop-types';
+
+import type { FC } from 'react';
 
 interface BlogPostCommentProps {
   authorAvatar: string;

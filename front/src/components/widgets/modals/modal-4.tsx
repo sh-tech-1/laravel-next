@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-import { formatDistanceToNowStrict, subDays, subHours, subMinutes } from 'date-fns';
 import {
   Avatar,
   Box,
@@ -11,7 +9,11 @@ import {
   Paper,
   Typography
 } from '@mui/material';
+import { formatDistanceToNowStrict, subDays, subHours, subMinutes } from 'date-fns';
+
 import { StatusIndicator } from '../../status-indicator';
+
+import type { FC } from 'react';
 
 interface Contact {
   id: string;

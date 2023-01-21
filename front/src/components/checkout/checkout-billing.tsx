@@ -1,5 +1,3 @@
-import type { ChangeEvent, FC } from 'react';
-import PropTypes from 'prop-types';
 import {
   Box,
   Checkbox,
@@ -10,6 +8,9 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import PropTypes from 'prop-types';
+
+import type { ChangeEvent, FC } from 'react';
 
 interface CheckoutBillingProps {
   billing: Record<string, any>;

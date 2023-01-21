@@ -1,11 +1,13 @@
-import { useEffect } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Box, Container, Grid, Typography } from '@mui/material';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import { BrowseLayout } from '../../components/browse-layout';
 import { MainLayout } from '../../components/main-layout';
 import { WidgetPreviewer } from '../../components/widget-previewer';
 import { gtm } from '../../lib/gtm';
+
+import type { NextPage } from 'next';
 
 export const BrowseTypography: NextPage = () => {
   useEffect(() => {

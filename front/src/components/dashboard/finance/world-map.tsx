@@ -1,5 +1,6 @@
-import type { FC } from 'react';
 import PropTypes from 'prop-types';
+
+import type { FC } from 'react';
 
 type Continents =
   | 'af'

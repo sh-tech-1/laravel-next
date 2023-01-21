@@ -1,5 +1,6 @@
-import type { FC, FormEvent } from 'react';
 import { Box, Button, Grid, Link, MenuItem, Select, TextField, Typography } from '@mui/material';
+
+import type { FC, FormEvent } from 'react';
 
 export const ContactForm: FC = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {

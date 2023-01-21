@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import { useState } from 'react';
 import { Avatar, Box, Button, Chip, IconButton, TextField, Typography } from '@mui/material';
 import { MobileDatePicker } from '@mui/x-date-pickers';
+import { useState } from 'react';
+
 import { Plus as PlusIcon } from '../../../icons/plus';
+
+import type { FC } from 'react';
 
 export const Form8: FC = () => {
   const [startDate, setStartDate] = useState<Date | null>(new Date());

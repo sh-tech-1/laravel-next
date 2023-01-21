@@ -1,9 +1,11 @@
-import type { FC, ReactNode } from 'react';
+import { Box, Button, Container, Divider, Grid, Typography } from '@mui/material';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Button, Container, Divider, Grid, Typography } from '@mui/material';
+
 import { ArrowLeft as ArrowLeftIcon } from '../icons/arrow-left';
+
+import type { FC, ReactNode } from 'react';
 
 interface BrowseLayoutProps {
   children: ReactNode;

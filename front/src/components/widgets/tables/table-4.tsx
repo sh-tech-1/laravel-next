@@ -1,6 +1,3 @@
-import type { FC } from 'react';
-import numeral from 'numeral';
-import { format, subMinutes, subSeconds } from 'date-fns';
 import {
   Box,
   Card,
@@ -16,12 +13,17 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
+import { format, subMinutes, subSeconds } from 'date-fns';
+import numeral from 'numeral';
+
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
 import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { Scrollbar } from '../../scrollbar';
-import type { SeverityPillColor } from '../../severity-pill';
 import { SeverityPill } from '../../severity-pill';
+
+import type { SeverityPillColor } from '../../severity-pill';
+import type { FC } from 'react';
 
 type OrderStatus = 'canceled' | 'complete' | 'pending' | 'rejected';
 

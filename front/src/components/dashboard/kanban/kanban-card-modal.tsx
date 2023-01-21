@@ -1,9 +1,3 @@
-import type { ChangeEvent, FC } from 'react';
-import { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import toast from 'react-hot-toast';
-// @ts-ignore
-import debounce from 'lodash.debounce';
 import {
   Box,
   Checkbox,
@@ -15,6 +9,12 @@ import {
   TextField,
   Typography
 } from '@mui/material';
+import debounce from 'lodash.debounce';
+import PropTypes from 'prop-types';
+import { Fragment } from 'react';
+import toast from 'react-hot-toast';
+// @ts-ignore
+
 import { Archive as ArchiveIcon } from '../../../icons/archive';
 import { Check as CheckIcon } from '../../../icons/check';
 import { DocumentText as DocumentTextIcon } from '../../../icons/document-text';
@@ -23,9 +23,12 @@ import { EyeOff as EyeOffIcon } from '../../../icons/eye-off';
 import { Users as UsersIcon } from '../../../icons/users';
 import { useDispatch, useSelector } from '../../../store';
 import { addChecklist, deleteCard, moveCard, updateCard } from '../../../thunks/kanban';
-import type { Card, Column } from '../../../types/kanban';
+
 import { KanbanCardAction } from './kanban-card-action';
 import { KanbanChecklist } from './kanban-checklist';
+
+import type { Card, Column } from '../../../types/kanban';
+import type { ChangeEvent, FC } from 'react';
 
 interface KanbanCardModalProps {
   card: Card;

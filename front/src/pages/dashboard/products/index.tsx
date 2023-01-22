@@ -9,10 +9,11 @@ import { DashboardLayout } from '@/components/dashboard/dashboard-layout';
 import { ProjectListFilters } from '@/components/dashboard/product/product-list-filters';
 import { ProductListTable } from '@/components/dashboard/product/product-list-table';
 import { useMounted } from '@/hooks/use-mounted';
+import { gtm } from '@/lib/gtm';
+
 import { Download as DownloadIcon } from '../../../icons/download';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { Upload as UploadIcon } from '../../../icons/upload';
-import { gtm } from '@/lib/gtm';
 
 import type { Filters } from '@/components/dashboard/product/product-list-filters';
 import type { Product } from '@/types/product';

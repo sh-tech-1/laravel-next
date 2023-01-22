@@ -7,14 +7,10 @@
       "prettier" //ESLintの情報に沿ってフォーマット
   ],
   "plugins": [
-      "react",
-      "@typescript-eslint",
       "import",
       "unused-imports"
   ],
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "sourceType": "module",
         "project": "./tsconfig.json"
     },
   "rules": {

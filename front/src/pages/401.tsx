@@ -4,7 +4,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import { useEffect } from 'react';
 
-import { gtm } from '../lib/gtm';
+import { gtm } from '@/lib/gtm';
 
 import type { NextPage } from 'next';
 
